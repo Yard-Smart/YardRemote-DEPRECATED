@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_YardRemote_Manager_YardRemote_ManagerUITests : NSObject
+@end
+@implementation PodsDummy_Pods_YardRemote_Manager_YardRemote_ManagerUITests
+@end

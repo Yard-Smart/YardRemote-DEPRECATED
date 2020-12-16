@@ -1,0 +1,751 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		427C4ACBB78108560F8C589A /* Pods_YardRemote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBDE30D9E731A5B9037BE45F /* Pods_YardRemote.framework */; };
+		5F0DE58F2F0DA4F1D4497117 /* Pods_YardRemoteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 106A892B12630CB700D54448 /* Pods_YardRemoteTests.framework */; };
+		AA2DB6E12584424800236188 /* YardRemoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2DB6E02584424800236188 /* YardRemoteApp.swift */; };
+		AA2DB6E52584424900236188 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA2DB6E42584424900236188 /* Assets.xcassets */; };
+		AA2DB6E82584424900236188 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA2DB6E72584424900236188 /* Preview Assets.xcassets */; };
+		AA2DB6F32584424A00236188 /* YardRemoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2DB6F22584424A00236188 /* YardRemoteTests.swift */; };
+		AA2DB6FE2584424A00236188 /* YardRemoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2DB6FD2584424A00236188 /* YardRemoteUITests.swift */; };
+		AA2DB7152584531300236188 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2DB7142584531200236188 /* HomePage.swift */; };
+		AA2DB71A2584556C00236188 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2DB7192584556C00236188 /* LandingPage.swift */; };
+		AA2DB71F25857ABB00236188 /* AccountData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2DB71E25857ABB00236188 /* AccountData.swift */; };
+		AA6ADE25258890C2007F9FB6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA6ADE24258890C2007F9FB6 /* GoogleService-Info.plist */; };
+		D79494E6574C08BCFFED8C15 /* Pods_YardRemote_YardRemoteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD9577AEA085C4BB1CDED65 /* Pods_YardRemote_YardRemoteUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA2DB6EF2584424A00236188 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA2DB6D52584424700236188 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA2DB6DC2584424700236188;
+			remoteInfo = YardRemote;
+		};
+		AA2DB6FA2584424A00236188 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA2DB6D52584424700236188 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA2DB6DC2584424700236188;
+			remoteInfo = YardRemote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		071BF0CABE8FAD6C36A021A8 /* Pods-YardRemoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YardRemoteTests.debug.xcconfig"; path = "Target Support Files/Pods-YardRemoteTests/Pods-YardRemoteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		106A892B12630CB700D54448 /* Pods_YardRemoteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YardRemoteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BD9577AEA085C4BB1CDED65 /* Pods_YardRemote_YardRemoteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YardRemote_YardRemoteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		543628E32F71CFECAADB6340 /* Pods-YardRemote-YardRemoteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YardRemote-YardRemoteUITests.release.xcconfig"; path = "Target Support Files/Pods-YardRemote-YardRemoteUITests/Pods-YardRemote-YardRemoteUITests.release.xcconfig"; sourceTree = "<group>"; };
+		71442246EE97529F1E433FE2 /* Pods-YardRemote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YardRemote.release.xcconfig"; path = "Target Support Files/Pods-YardRemote/Pods-YardRemote.release.xcconfig"; sourceTree = "<group>"; };
+		72A35168D741A218B8916271 /* Pods-YardRemoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YardRemoteTests.release.xcconfig"; path = "Target Support Files/Pods-YardRemoteTests/Pods-YardRemoteTests.release.xcconfig"; sourceTree = "<group>"; };
+		AA2DB6DD2584424700236188 /* YardRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YardRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA2DB6E02584424800236188 /* YardRemoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YardRemoteApp.swift; sourceTree = "<group>"; };
+		AA2DB6E42584424900236188 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA2DB6E72584424900236188 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA2DB6E92584424900236188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA2DB6EE2584424A00236188 /* YardRemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YardRemoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA2DB6F22584424A00236188 /* YardRemoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YardRemoteTests.swift; sourceTree = "<group>"; };
+		AA2DB6F42584424A00236188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA2DB6F92584424A00236188 /* YardRemoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YardRemoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA2DB6FD2584424A00236188 /* YardRemoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YardRemoteUITests.swift; sourceTree = "<group>"; };
+		AA2DB6FF2584424A00236188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA2DB7142584531200236188 /* HomePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		AA2DB7192584556C00236188 /* LandingPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
+		AA2DB71E25857ABB00236188 /* AccountData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountData.swift; sourceTree = "<group>"; };
+		AA6ADE24258890C2007F9FB6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		CBDE30D9E731A5B9037BE45F /* Pods_YardRemote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YardRemote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC06D18290071953338D904A /* Pods-YardRemote-YardRemoteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YardRemote-YardRemoteUITests.debug.xcconfig"; path = "Target Support Files/Pods-YardRemote-YardRemoteUITests/Pods-YardRemote-YardRemoteUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB298477185F479224E07675 /* Pods-YardRemote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YardRemote.debug.xcconfig"; path = "Target Support Files/Pods-YardRemote/Pods-YardRemote.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA2DB6DA2584424700236188 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427C4ACBB78108560F8C589A /* Pods_YardRemote.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA2DB6EB2584424A00236188 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F0DE58F2F0DA4F1D4497117 /* Pods_YardRemoteTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA2DB6F62584424A00236188 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D79494E6574C08BCFFED8C15 /* Pods_YardRemote_YardRemoteUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1395EB2F376CAB11403F085A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB298477185F479224E07675 /* Pods-YardRemote.debug.xcconfig */,
+				71442246EE97529F1E433FE2 /* Pods-YardRemote.release.xcconfig */,
+				EC06D18290071953338D904A /* Pods-YardRemote-YardRemoteUITests.debug.xcconfig */,
+				543628E32F71CFECAADB6340 /* Pods-YardRemote-YardRemoteUITests.release.xcconfig */,
+				071BF0CABE8FAD6C36A021A8 /* Pods-YardRemoteTests.debug.xcconfig */,
+				72A35168D741A218B8916271 /* Pods-YardRemoteTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6381713E8B6BC7C5C02790A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBDE30D9E731A5B9037BE45F /* Pods_YardRemote.framework */,
+				3BD9577AEA085C4BB1CDED65 /* Pods_YardRemote_YardRemoteUITests.framework */,
+				106A892B12630CB700D54448 /* Pods_YardRemoteTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA2DB6D42584424700236188 = {
+			isa = PBXGroup;
+			children = (
+				AA2DB6DF2584424800236188 /* YardRemote */,
+				AA2DB6F12584424A00236188 /* YardRemoteTests */,
+				AA2DB6FC2584424A00236188 /* YardRemoteUITests */,
+				AA2DB6DE2584424700236188 /* Products */,
+				1395EB2F376CAB11403F085A /* Pods */,
+				6381713E8B6BC7C5C02790A5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AA2DB6DE2584424700236188 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA2DB6DD2584424700236188 /* YardRemote.app */,
+				AA2DB6EE2584424A00236188 /* YardRemoteTests.xctest */,
+				AA2DB6F92584424A00236188 /* YardRemoteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA2DB6DF2584424800236188 /* YardRemote */ = {
+			isa = PBXGroup;
+			children = (
+				AA6ADE24258890C2007F9FB6 /* GoogleService-Info.plist */,
+				AA2DB71E25857ABB00236188 /* AccountData.swift */,
+				AA2DB7192584556C00236188 /* LandingPage.swift */,
+				AA2DB7142584531200236188 /* HomePage.swift */,
+				AA2DB6E02584424800236188 /* YardRemoteApp.swift */,
+				AA2DB6E42584424900236188 /* Assets.xcassets */,
+				AA2DB6E92584424900236188 /* Info.plist */,
+				AA2DB6E62584424900236188 /* Preview Content */,
+			);
+			path = YardRemote;
+			sourceTree = "<group>";
+		};
+		AA2DB6E62584424900236188 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AA2DB6E72584424900236188 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AA2DB6F12584424A00236188 /* YardRemoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA2DB6F22584424A00236188 /* YardRemoteTests.swift */,
+				AA2DB6F42584424A00236188 /* Info.plist */,
+			);
+			path = YardRemoteTests;
+			sourceTree = "<group>";
+		};
+		AA2DB6FC2584424A00236188 /* YardRemoteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AA2DB6FD2584424A00236188 /* YardRemoteUITests.swift */,
+				AA2DB6FF2584424A00236188 /* Info.plist */,
+			);
+			path = YardRemoteUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA2DB6DC2584424700236188 /* YardRemote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA2DB7022584424A00236188 /* Build configuration list for PBXNativeTarget "YardRemote" */;
+			buildPhases = (
+				A36B42F35B0DC39D4373916A /* [CP] Check Pods Manifest.lock */,
+				AA2DB6D92584424700236188 /* Sources */,
+				AA2DB6DA2584424700236188 /* Frameworks */,
+				AA2DB6DB2584424700236188 /* Resources */,
+				8E572A358F3AD61D98BD389A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YardRemote;
+			productName = YardRemote;
+			productReference = AA2DB6DD2584424700236188 /* YardRemote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA2DB6ED2584424A00236188 /* YardRemoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA2DB7052584424A00236188 /* Build configuration list for PBXNativeTarget "YardRemoteTests" */;
+			buildPhases = (
+				2B5118F3E07665B1F9AD13E9 /* [CP] Check Pods Manifest.lock */,
+				AA2DB6EA2584424A00236188 /* Sources */,
+				AA2DB6EB2584424A00236188 /* Frameworks */,
+				AA2DB6EC2584424A00236188 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA2DB6F02584424A00236188 /* PBXTargetDependency */,
+			);
+			name = YardRemoteTests;
+			productName = YardRemoteTests;
+			productReference = AA2DB6EE2584424A00236188 /* YardRemoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AA2DB6F82584424A00236188 /* YardRemoteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA2DB7082584424A00236188 /* Build configuration list for PBXNativeTarget "YardRemoteUITests" */;
+			buildPhases = (
+				7CBBE1639F5FBB9341BF0359 /* [CP] Check Pods Manifest.lock */,
+				AA2DB6F52584424A00236188 /* Sources */,
+				AA2DB6F62584424A00236188 /* Frameworks */,
+				AA2DB6F72584424A00236188 /* Resources */,
+				D24BE337AED7FBD1AF13B00A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA2DB6FB2584424A00236188 /* PBXTargetDependency */,
+			);
+			name = YardRemoteUITests;
+			productName = YardRemoteUITests;
+			productReference = AA2DB6F92584424A00236188 /* YardRemoteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA2DB6D52584424700236188 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					AA2DB6DC2584424700236188 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					AA2DB6ED2584424A00236188 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = AA2DB6DC2584424700236188;
+					};
+					AA2DB6F82584424A00236188 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = AA2DB6DC2584424700236188;
+					};
+				};
+			};
+			buildConfigurationList = AA2DB6D82584424700236188 /* Build configuration list for PBXProject "YardRemote" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA2DB6D42584424700236188;
+			productRefGroup = AA2DB6DE2584424700236188 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA2DB6DC2584424700236188 /* YardRemote */,
+				AA2DB6ED2584424A00236188 /* YardRemoteTests */,
+				AA2DB6F82584424A00236188 /* YardRemoteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA2DB6DB2584424700236188 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA2DB6E82584424900236188 /* Preview Assets.xcassets in Resources */,
+				AA2DB6E52584424900236188 /* Assets.xcassets in Resources */,
+				AA6ADE25258890C2007F9FB6 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA2DB6EC2584424A00236188 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA2DB6F72584424A00236188 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B5118F3E07665B1F9AD13E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YardRemoteTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CBBE1639F5FBB9341BF0359 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YardRemote-YardRemoteUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E572A358F3AD61D98BD389A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YardRemote/Pods-YardRemote-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YardRemote/Pods-YardRemote-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YardRemote/Pods-YardRemote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A36B42F35B0DC39D4373916A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YardRemote-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D24BE337AED7FBD1AF13B00A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YardRemote-YardRemoteUITests/Pods-YardRemote-YardRemoteUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YardRemote-YardRemoteUITests/Pods-YardRemote-YardRemoteUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YardRemote-YardRemoteUITests/Pods-YardRemote-YardRemoteUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA2DB6D92584424700236188 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA2DB6E12584424800236188 /* YardRemoteApp.swift in Sources */,
+				AA2DB7152584531300236188 /* HomePage.swift in Sources */,
+				AA2DB71A2584556C00236188 /* LandingPage.swift in Sources */,
+				AA2DB71F25857ABB00236188 /* AccountData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA2DB6EA2584424A00236188 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA2DB6F32584424A00236188 /* YardRemoteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA2DB6F52584424A00236188 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA2DB6FE2584424A00236188 /* YardRemoteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA2DB6F02584424A00236188 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA2DB6DC2584424700236188 /* YardRemote */;
+			targetProxy = AA2DB6EF2584424A00236188 /* PBXContainerItemProxy */;
+		};
+		AA2DB6FB2584424A00236188 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA2DB6DC2584424700236188 /* YardRemote */;
+			targetProxy = AA2DB6FA2584424A00236188 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AA2DB7002584424A00236188 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA2DB7012584424A00236188 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA2DB7032584424A00236188 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB298477185F479224E07675 /* Pods-YardRemote.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"YardRemote/Preview Content\"";
+				DEVELOPMENT_TEAM = L4YB8P25JQ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = YardRemote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YS.YardRemote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA2DB7042584424A00236188 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71442246EE97529F1E433FE2 /* Pods-YardRemote.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"YardRemote/Preview Content\"";
+				DEVELOPMENT_TEAM = L4YB8P25JQ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = YardRemote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YS.YardRemote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AA2DB7062584424A00236188 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 071BF0CABE8FAD6C36A021A8 /* Pods-YardRemoteTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4YB8P25JQ;
+				INFOPLIST_FILE = YardRemoteTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RLC.YardRemoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YardRemote.app/YardRemote";
+			};
+			name = Debug;
+		};
+		AA2DB7072584424A00236188 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72A35168D741A218B8916271 /* Pods-YardRemoteTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4YB8P25JQ;
+				INFOPLIST_FILE = YardRemoteTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RLC.YardRemoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YardRemote.app/YardRemote";
+			};
+			name = Release;
+		};
+		AA2DB7092584424A00236188 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC06D18290071953338D904A /* Pods-YardRemote-YardRemoteUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4YB8P25JQ;
+				INFOPLIST_FILE = YardRemoteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RLC.YardRemoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YardRemote;
+			};
+			name = Debug;
+		};
+		AA2DB70A2584424A00236188 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 543628E32F71CFECAADB6340 /* Pods-YardRemote-YardRemoteUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4YB8P25JQ;
+				INFOPLIST_FILE = YardRemoteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RLC.YardRemoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YardRemote;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA2DB6D82584424700236188 /* Build configuration list for PBXProject "YardRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA2DB7002584424A00236188 /* Debug */,
+				AA2DB7012584424A00236188 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA2DB7022584424A00236188 /* Build configuration list for PBXNativeTarget "YardRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA2DB7032584424A00236188 /* Debug */,
+				AA2DB7042584424A00236188 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA2DB7052584424A00236188 /* Build configuration list for PBXNativeTarget "YardRemoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA2DB7062584424A00236188 /* Debug */,
+				AA2DB7072584424A00236188 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA2DB7082584424A00236188 /* Build configuration list for PBXNativeTarget "YardRemoteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA2DB7092584424A00236188 /* Debug */,
+				AA2DB70A2584424A00236188 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA2DB6D52584424700236188 /* Project object */;
+}

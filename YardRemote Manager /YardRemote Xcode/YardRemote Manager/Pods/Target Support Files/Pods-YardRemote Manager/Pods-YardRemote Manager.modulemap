@@ -1,0 +1,6 @@
+framework module Pods_YardRemote_Manager {
+  umbrella header "Pods-YardRemote Manager-umbrella.h"
+
+  export *
+  module * { export * }
+}

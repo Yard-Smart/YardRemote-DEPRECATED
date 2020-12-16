@@ -1,0 +1,6 @@
+framework module Pods_YardRemote_ManagerTests {
+  umbrella header "Pods-YardRemote ManagerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
