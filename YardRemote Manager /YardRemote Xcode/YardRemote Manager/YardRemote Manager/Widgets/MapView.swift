@@ -67,9 +67,8 @@ import CoreLocation
 var locationManager = CLLocationManager()
 
 struct MapView: UIViewRepresentable {
-  
-
     
+
 
   func setupManager() {
     locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -89,6 +88,7 @@ struct MapView: UIViewRepresentable {
   }
 }
 
+
 struct locationInfoWidget: View {
 
     var userLatitude: String {
@@ -99,6 +99,19 @@ struct locationInfoWidget: View {
     var userLongitude: String {
         return "\(locationManager.location?.coordinate.longitude ?? 0)"
     }
+   var address_string: String = "No address"
+    
+//    func address(){
+//        return CLGeocoder.init().reverseGeocodeLocation(locationManager.location!) { (place, error) in
+//            self.address_string = place?.first?.country
+//
+//        }
+//    }
+//
+    let loc = locationManager.location
+    
+
+
 
     var body: some View {
         VStack {
@@ -112,6 +125,7 @@ struct locationInfoWidget: View {
                 Text("latitude: \(userLatitude)")
                 Text("longitude: \(userLongitude)")
             }
+            Text("add: \(address_string)")
         }.font(.system(size: 8, weight: .black, design: .default))
     }
 }
