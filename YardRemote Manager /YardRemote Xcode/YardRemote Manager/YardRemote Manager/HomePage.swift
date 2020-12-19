@@ -8,11 +8,30 @@
 import SwiftUI
 import Combine
 import CoreLocation
+import GoogleSignIn
+import Firebase
+import FirebaseFirestore
 
 var TopH:CGFloat = 80
 var TopW:CGFloat = UIScreen.main.bounds.width
 
-
+struct AddressesListView: View {
+    var addresses: [Address]
+  
+  var body: some View {
+    
+      ForEach(addresses) {address in // (2)
+        VStack(alignment: .leading) {
+            Text(address.address)
+            .font(.headline)
+          Text(address.name)
+            .font(.subheadline)
+            Text("\(address.ownerID)  is owner")
+            .font(.subheadline)
+        }
+      }
+    }
+}
 
 
 struct PastJobsWidget: View {
@@ -97,19 +116,25 @@ func lookUpCurrentLocation(completionHandler: @escaping (CLPlacemark?)
 
 
 struct NewJobWidget: View {
-    @State private var mapWidth: CGFloat = 400
+    @State private var mapHeight: CGFloat = 400
     @State private var n_employees = 5.0
-    @State private var address = lookUpCurrentLocation(completionHandler: locationManager.delegate)
+    @State private var address = ""
     @State private var isEditing = false
     var body: some View {
         VStack{
             MapView()
-                .frame(minWidth: 100, idealWidth: TopW, maxWidth: TopW, minHeight: 100, idealHeight: mapWidth, maxHeight: 500, alignment: .center)
+                .frame(minWidth: 100, idealWidth: TopW, maxWidth: TopW, minHeight: 100, idealHeight: mapHeight, maxHeight: mapHeight, alignment: .center)
                 .cornerRadius(10)
                 .onTapGesture {
-                    self.mapWidth = 400
+                    if self.mapHeight == TopW{
+                        self.mapHeight = TopW*2
+                    }
+                    else{
+                        self.mapHeight = TopW
+                    }
                 }
             locationInfoWidget()
+            
             Rectangle()
             .fill(Color(UIColor.systemFill))
             .frame(minWidth: 180, idealWidth: TopW, maxWidth: TopW, minHeight: 10, idealHeight: 10, maxHeight: 80, alignment: .center)
@@ -152,27 +177,130 @@ struct NewJobWidget: View {
                     TextField("Type Address", text: $address)
                         .font(.system(size: 40, weight: .black, design: .default))
                         .padding(15)
-                        
-
-                        
                 }
                 
             )
             
             startBotton()
-            
-            
-//            VStack {
-//                  Text("Your location is:")
-//                  HStack {
-//                    Text("Latitude: \(locationViewModel.userLatitude)")
-//                    Text("Longitude: \(locationViewModel.userLongitude)")
-//                  }
-//            }
         }
     }
 }
 
+struct addEmploye: View {
+    @State private var id = ""
+    @State private var name = ""
+    @State private var creatorID = ""
+    @State private var address = ""
+    var body: some View {
+        VStack{
+            HStack{
+                Text("id")
+                TextField("Type id", text: $id)
+                    .font(.system(size: 40, weight: .black, design: .default))
+                    .padding(15)
+            }
+            HStack{
+                            Text("name")
+                            TextField("Type name", text: $name)
+                                .font(.system(size: 40, weight: .black, design: .default))
+                                .padding(15)
+                        }
+            HStack{
+                            Text("creatorID")
+                            TextField("Type creatorID", text: $creatorID)
+                                .font(.system(size: 40, weight: .black, design: .default))
+                                .padding(15)
+                        }
+            HStack{
+                            Text("address")
+                            TextField("Type address", text: $address)
+                                .font(.system(size: 40, weight: .black, design: .default))
+                                .padding(15)
+                        }
+
+            Rectangle()
+            .fill(Color.gray)
+            .frame(minWidth: 180, idealWidth: 400, maxWidth: 400, minHeight: 50, idealHeight: 50, maxHeight: 100, alignment: .center)
+            .cornerRadius(10)
+            .overlay(
+                VStack{
+                    HStack {
+                        Text("Done")
+                            .foregroundColor(Color(UIColor.label))
+                            .font(.system(size: 20, weight: .black, design: .default))
+
+    
+                    }
+                        
+                }.padding(5)
+                
+            ).onTapGesture {
+                let employees = Firestore.firestore().collection("employees")
+
+                let nEmployee = Employee(id: id, name: name, creatorID: creatorID, address: address)
+                
+                employees.addDocument(data: nEmployee.dictionary)
+            }
+        }
+    }
+}
+
+struct manageEmployees: View {
+    var body: some View {
+        VStack{
+            Section(header:
+                HStack {
+                    Spacer()
+                    Text("Edit Employee Info")
+                        .font(.system(size: 26, weight: .black, design: .default))
+            }) {
+                PastJobsWidget()
+            }
+            
+            Section(header:
+                HStack {
+                    Spacer()
+                    Text("Add Employee")
+                        .font(.system(size: 26, weight: .black, design: .default))
+            }) {
+                addEmploye()
+                
+            }
+        }
+    }
+}
+
+struct managementWidget: View {
+    var body: some View {
+        VStack{
+            Rectangle()
+            .fill(Color(UIColor.systemFill))
+            .frame(minWidth: 180, idealWidth: TopW, maxWidth: TopW, minHeight: 10, idealHeight: 10, maxHeight: 40, alignment: .center)
+            .cornerRadius(30)
+            .overlay(
+                HStack{
+                    Text("Manage Employees")
+                        .font(.system(size: 40, weight: .black, design: .default))
+                        .padding(15)
+                }
+            )
+            Rectangle()
+            .fill(Color(UIColor.systemFill))
+            .frame(minWidth: 180, idealWidth: TopW, maxWidth: TopW, minHeight: 10, idealHeight: 10, maxHeight: 40, alignment: .center)
+            .cornerRadius(30)
+            .overlay(
+            NavigationLink(
+                destination: manageEmployees(),
+                label: {
+                    Text("Manage Employees")
+                        .font(.system(size: 40, weight: .black, design: .default))
+                        .padding(15)
+                }
+            )
+            )
+        }
+    }
+}
 
 struct LandingPageTop: View {
     var body: some View {
@@ -196,6 +324,7 @@ struct LandingPageTop: View {
     }
 }
 struct HomePage: View {
+
     var body: some View {
         VStack {
             Rectangle()
@@ -210,6 +339,7 @@ struct HomePage: View {
                     }) {
                         PastJobsWidget()
                     }
+                    
                     Section(header:
                         HStack {
                             Spacer()
@@ -217,8 +347,17 @@ struct HomePage: View {
                                 .font(.system(size: 26, weight: .black, design: .default))
                     }) {
                         NewJobWidget()
+                        
                     }
                     
+                    Section(header:
+                        HStack {
+                            Spacer()
+                            Text("Management")
+                                .font(.system(size: 26, weight: .black, design: .default))
+                    }) {
+                        managementWidget()
+                    }
                     
                 }
                 .listStyle(GroupedListStyle())

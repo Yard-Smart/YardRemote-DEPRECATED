@@ -9,17 +9,19 @@
 /* Begin PBXBuildFile section */
 		0C5DCFAA991EE24F7F12A3DF /* Pods_YardRemote_Manager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD313FB38DC21573298C5E0E /* Pods_YardRemote_Manager.framework */; };
 		675EC645A801BDF4266CCB63 /* Pods_YardRemote_Manager_YardRemote_ManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E8EE145A817F2B2162B497F /* Pods_YardRemote_Manager_YardRemote_ManagerUITests.framework */; };
+		AA1BE771258EADE100A57433 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1BE770258EADE100A57433 /* Employee.swift */; };
+		AA1BE779258EADFF00A57433 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1BE778258EADFF00A57433 /* Job.swift */; };
+		AA1BE77E258EAE2100A57433 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1BE77D258EAE2100A57433 /* Bill.swift */; };
+		AA1BE783258EAE3700A57433 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1BE782258EAE3700A57433 /* Address.swift */; };
+		AA53602B258A594200D2C5A3 /* SignInGoogle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53602A258A594200D2C5A3 /* SignInGoogle.swift */; };
 		AA6ADF262589E4AA007F9FB6 /* YardRemote_ManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6ADF252589E4AA007F9FB6 /* YardRemote_ManagerApp.swift */; };
-		AA6ADF282589E4AA007F9FB6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6ADF272589E4AA007F9FB6 /* ContentView.swift */; };
 		AA6ADF2A2589E4AB007F9FB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA6ADF292589E4AB007F9FB6 /* Assets.xcassets */; };
 		AA6ADF2D2589E4AB007F9FB6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA6ADF2C2589E4AB007F9FB6 /* Preview Assets.xcassets */; };
 		AA6ADF382589E4AB007F9FB6 /* YardRemote_ManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6ADF372589E4AB007F9FB6 /* YardRemote_ManagerTests.swift */; };
 		AA6ADF432589E4AC007F9FB6 /* YardRemote_ManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6ADF422589E4AC007F9FB6 /* YardRemote_ManagerUITests.swift */; };
 		AA6ADF7B2589E827007F9FB6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6ADF7A2589E827007F9FB6 /* MapView.swift */; };
 		AA6ADF802589E928007F9FB6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA6ADF7F2589E928007F9FB6 /* GoogleService-Info.plist */; };
-		AA6ADF8A2589EE32007F9FB6 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6ADF892589EE32007F9FB6 /* Job.swift */; };
 		AA6ADF922589F66D007F9FB6 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6ADF912589F66D007F9FB6 /* HomePage.swift */; };
-		AA6ADF9A258A0222007F9FB6 /* locationManagerDidChangeAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6ADF99258A0222007F9FB6 /* locationManagerDidChangeAuthorization.swift */; };
 		FEFF49089F78F14E8B27F464 /* Pods_YardRemote_ManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 803F2504694EDDB9772C75B3 /* Pods_YardRemote_ManagerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,9 +50,13 @@
 		8DEE6C6030E9D7400AD0E122 /* Pods-YardRemote Manager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YardRemote Manager.release.xcconfig"; path = "Target Support Files/Pods-YardRemote Manager/Pods-YardRemote Manager.release.xcconfig"; sourceTree = "<group>"; };
 		92B99A7B1ABDC0D0B31E6E90 /* Pods-YardRemote Manager-YardRemote ManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YardRemote Manager-YardRemote ManagerUITests.release.xcconfig"; path = "Target Support Files/Pods-YardRemote Manager-YardRemote ManagerUITests/Pods-YardRemote Manager-YardRemote ManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		99231407A3453AF8AAB736A1 /* Pods-YardRemote ManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YardRemote ManagerTests.debug.xcconfig"; path = "Target Support Files/Pods-YardRemote ManagerTests/Pods-YardRemote ManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA1BE770258EADE100A57433 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		AA1BE778258EADFF00A57433 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		AA1BE77D258EAE2100A57433 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
+		AA1BE782258EAE3700A57433 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		AA53602A258A594200D2C5A3 /* SignInGoogle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInGoogle.swift; sourceTree = "<group>"; };
 		AA6ADF222589E4AA007F9FB6 /* YardRemote Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YardRemote Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA6ADF252589E4AA007F9FB6 /* YardRemote_ManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YardRemote_ManagerApp.swift; sourceTree = "<group>"; };
-		AA6ADF272589E4AA007F9FB6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AA6ADF292589E4AB007F9FB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA6ADF2C2589E4AB007F9FB6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AA6ADF2E2589E4AB007F9FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,9 +68,7 @@
 		AA6ADF442589E4AC007F9FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA6ADF7A2589E827007F9FB6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		AA6ADF7F2589E928007F9FB6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
-		AA6ADF892589EE32007F9FB6 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 		AA6ADF912589F66D007F9FB6 /* HomePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
-		AA6ADF99258A0222007F9FB6 /* locationManagerDidChangeAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationManagerDidChangeAuthorization.swift; sourceTree = "<group>"; };
 		ACF1CAA4A4AA1C2AA4A0AA18 /* Pods-YardRemote Manager-YardRemote ManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YardRemote Manager-YardRemote ManagerUITests.debug.xcconfig"; path = "Target Support Files/Pods-YardRemote Manager-YardRemote ManagerUITests/Pods-YardRemote Manager-YardRemote ManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FD313FB38DC21573298C5E0E /* Pods_YardRemote_Manager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YardRemote_Manager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -120,6 +124,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AA1BE76F258EADCB00A57433 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AA1BE770258EADE100A57433 /* Employee.swift */,
+				AA1BE778258EADFF00A57433 /* Job.swift */,
+				AA1BE77D258EAE2100A57433 /* Bill.swift */,
+				AA1BE782258EAE3700A57433 /* Address.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AA1BE787258EAE5E00A57433 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				AA6ADF7A2589E827007F9FB6 /* MapView.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		AA1BE788258EAE8300A57433 /* SubPages */ = {
+			isa = PBXGroup;
+			children = (
+				AA53602A258A594200D2C5A3 /* SignInGoogle.swift */,
+			);
+			path = SubPages;
+			sourceTree = "<group>";
+		};
 		AA6ADF192589E4AA007F9FB6 = {
 			isa = PBXGroup;
 			children = (
@@ -146,12 +177,11 @@
 			isa = PBXGroup;
 			children = (
 				AA6ADF912589F66D007F9FB6 /* HomePage.swift */,
-				AA6ADF99258A0222007F9FB6 /* locationManagerDidChangeAuthorization.swift */,
+				AA1BE788258EAE8300A57433 /* SubPages */,
+				AA1BE787258EAE5E00A57433 /* Widgets */,
+				AA1BE76F258EADCB00A57433 /* Data */,
 				AA6ADF7F2589E928007F9FB6 /* GoogleService-Info.plist */,
 				AA6ADF252589E4AA007F9FB6 /* YardRemote_ManagerApp.swift */,
-				AA6ADF272589E4AA007F9FB6 /* ContentView.swift */,
-				AA6ADF892589EE32007F9FB6 /* Job.swift */,
-				AA6ADF7A2589E827007F9FB6 /* MapView.swift */,
 				AA6ADF292589E4AB007F9FB6 /* Assets.xcassets */,
 				AA6ADF2E2589E4AB007F9FB6 /* Info.plist */,
 				AA6ADF2B2589E4AB007F9FB6 /* Preview Content */,
@@ -197,6 +227,7 @@
 				AA6ADF1F2589E4AA007F9FB6 /* Frameworks */,
 				AA6ADF202589E4AA007F9FB6 /* Resources */,
 				95FED495E3CB81B7FEDB34D2 /* [CP] Embed Pods Frameworks */,
+				7D16DE1814070A9C5EDE3BBE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,6 +266,7 @@
 				AA6ADF3B2589E4AC007F9FB6 /* Frameworks */,
 				AA6ADF3C2589E4AC007F9FB6 /* Resources */,
 				8B47AE18C6C74BBD018DC096 /* [CP] Embed Pods Frameworks */,
+				BB7D1E1E37D4BFFE26525A0F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -382,6 +414,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7D16DE1814070A9C5EDE3BBE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YardRemote Manager/Pods-YardRemote Manager-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YardRemote Manager/Pods-YardRemote Manager-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YardRemote Manager/Pods-YardRemote Manager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8B47AE18C6C74BBD018DC096 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -416,6 +465,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YardRemote Manager/Pods-YardRemote Manager-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BB7D1E1E37D4BFFE26525A0F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YardRemote Manager-YardRemote ManagerUITests/Pods-YardRemote Manager-YardRemote ManagerUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YardRemote Manager-YardRemote ManagerUITests/Pods-YardRemote Manager-YardRemote ManagerUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YardRemote Manager-YardRemote ManagerUITests/Pods-YardRemote Manager-YardRemote ManagerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -424,11 +490,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA6ADF922589F66D007F9FB6 /* HomePage.swift in Sources */,
-				AA6ADF282589E4AA007F9FB6 /* ContentView.swift in Sources */,
+				AA53602B258A594200D2C5A3 /* SignInGoogle.swift in Sources */,
+				AA1BE771258EADE100A57433 /* Employee.swift in Sources */,
+				AA1BE783258EAE3700A57433 /* Address.swift in Sources */,
 				AA6ADF7B2589E827007F9FB6 /* MapView.swift in Sources */,
 				AA6ADF262589E4AA007F9FB6 /* YardRemote_ManagerApp.swift in Sources */,
-				AA6ADF9A258A0222007F9FB6 /* locationManagerDidChangeAuthorization.swift in Sources */,
-				AA6ADF8A2589EE32007F9FB6 /* Job.swift in Sources */,
+				AA1BE77E258EAE2100A57433 /* Bill.swift in Sources */,
+				AA1BE779258EADFF00A57433 /* Job.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
