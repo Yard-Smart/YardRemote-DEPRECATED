@@ -7,7 +7,7 @@
 
 import Foundation
 
-import FirebaseFirestore
+import Firebase
 
 struct Employee: Identifiable, Hashable, Equatable{
     let id: String
@@ -28,5 +28,21 @@ struct Employee: Identifiable, Hashable, Equatable{
         "address": address,
       ]
     }
+    
 }
+let tstEmployee = Employee(id: "felg", name: "Felipe Galindo", creatorID: "Felg", address: "315 S Basswood Ave")
+//extension Employee: DocumentSerializable {
+//    init?(dictionary: [String : Any]) {
+//      guard let id = dictionary["id"] as? String,
+//          let name = dictionary["name"] as? String,
+//          let creatorID = dictionary["creatorID"] as? String,
+//          let address = dictionary["address"] as? Int else { return nil }
+//
+//      self.init(id : id,
+//                name : name,
+//                creatorID : creatorID,
+//                address : address)
+//    }
+//}
+
 

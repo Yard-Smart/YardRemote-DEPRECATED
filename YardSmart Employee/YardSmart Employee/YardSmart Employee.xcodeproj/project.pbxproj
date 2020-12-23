@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9106E8AAEF88D6E72E4F1659 /* Pods_YardSmart_Employee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2460445BF10E7899E4C5F951 /* Pods_YardSmart_Employee.framework */; };
+		AA5AE4AA2592D54800C9AC61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5AE4A92592D54800C9AC61 /* AppDelegate.swift */; };
+		AA5AE4AC2592D54800C9AC61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5AE4AB2592D54800C9AC61 /* SceneDelegate.swift */; };
+		AA5AE4AE2592D54800C9AC61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5AE4AD2592D54800C9AC61 /* ContentView.swift */; };
+		AA5AE4B02592D54900C9AC61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5AE4AF2592D54900C9AC61 /* Assets.xcassets */; };
+		AA5AE4B32592D54900C9AC61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5AE4B22592D54900C9AC61 /* Preview Assets.xcassets */; };
+		AA5AE4B62592D54900C9AC61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5AE4B42592D54900C9AC61 /* LaunchScreen.storyboard */; };
+		AA5AE4C02592D66700C9AC61 /* NewJobWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5AE4BF2592D66600C9AC61 /* NewJobWidget.swift */; };
+		AA5AE4C32592D6E600C9AC61 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5AE4C22592D6E600C9AC61 /* MapView.swift */; };
+		AA5AE4C72592D9D500C9AC61 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5AE4C62592D9D500C9AC61 /* Job.swift */; };
+		AA5AE4CE2592DA6400C9AC61 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA5AE4CD2592DA6400C9AC61 /* GoogleService-Info.plist */; };
+		AA5AE4E92592DD2000C9AC61 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5AE4E82592DD2000C9AC61 /* Employee.swift */; };
+		AA7681892592EFE900E7D37B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7681882592EFE900E7D37B /* Location.swift */; };
+		AA76818C2592F0A700E7D37B /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA76818B2592F0A700E7D37B /* Bill.swift */; };
+		AA76818F2592F0C700E7D37B /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA76818E2592F0C700E7D37B /* Action.swift */; };
+		AA7681962592F18E00E7D37B /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7681912592F18E00E7D37B /* Buttons.swift */; };
+		AA7681982592F18E00E7D37B /* PastJobsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7681932592F18E00E7D37B /* PastJobsWidget.swift */; };
+		AA7681992592F18E00E7D37B /* employeeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7681942592F18E00E7D37B /* employeeList.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		12F94F5F5CACFFF562086551 /* Pods-YardSmart Employee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YardSmart Employee.release.xcconfig"; path = "Target Support Files/Pods-YardSmart Employee/Pods-YardSmart Employee.release.xcconfig"; sourceTree = "<group>"; };
+		2460445BF10E7899E4C5F951 /* Pods_YardSmart_Employee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YardSmart_Employee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F5F59C9D309BD7710C2D758 /* Pods-YardSmart Employee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YardSmart Employee.debug.xcconfig"; path = "Target Support Files/Pods-YardSmart Employee/Pods-YardSmart Employee.debug.xcconfig"; sourceTree = "<group>"; };
+		AA5AE4A62592D54800C9AC61 /* YardSmart Employee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YardSmart Employee.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5AE4A92592D54800C9AC61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA5AE4AB2592D54800C9AC61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AA5AE4AD2592D54800C9AC61 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA5AE4AF2592D54900C9AC61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA5AE4B22592D54900C9AC61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA5AE4B52592D54900C9AC61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA5AE4B72592D54900C9AC61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA5AE4BF2592D66600C9AC61 /* NewJobWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewJobWidget.swift; sourceTree = "<group>"; };
+		AA5AE4C22592D6E600C9AC61 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		AA5AE4C62592D9D500C9AC61 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		AA5AE4CD2592DA6400C9AC61 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AA5AE4E82592DD2000C9AC61 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		AA7681882592EFE900E7D37B /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		AA76818B2592F0A700E7D37B /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
+		AA76818E2592F0C700E7D37B /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		AA7681912592F18E00E7D37B /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		AA7681932592F18E00E7D37B /* PastJobsWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastJobsWidget.swift; sourceTree = "<group>"; };
+		AA7681942592F18E00E7D37B /* employeeList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = employeeList.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA5AE4A32592D54800C9AC61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9106E8AAEF88D6E72E4F1659 /* Pods_YardSmart_Employee.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BF8EA4714F2594BD8DF0D85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F5F59C9D309BD7710C2D758 /* Pods-YardSmart Employee.debug.xcconfig */,
+				12F94F5F5CACFFF562086551 /* Pods-YardSmart Employee.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		99A6249FE81F8081C530F2EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2460445BF10E7899E4C5F951 /* Pods_YardSmart_Employee.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA5AE49D2592D54800C9AC61 = {
+			isa = PBXGroup;
+			children = (
+				AA5AE4A82592D54800C9AC61 /* YardSmart Employee */,
+				AA5AE4A72592D54800C9AC61 /* Products */,
+				1BF8EA4714F2594BD8DF0D85 /* Pods */,
+				99A6249FE81F8081C530F2EC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AA5AE4A72592D54800C9AC61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA5AE4A62592D54800C9AC61 /* YardSmart Employee.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA5AE4A82592D54800C9AC61 /* YardSmart Employee */ = {
+			isa = PBXGroup;
+			children = (
+				AA5AE4EB2592DFDD00C9AC61 /* ViewModels */,
+				AA5AE4E62592DB6700C9AC61 /* Models */,
+				AA5AE4CD2592DA6400C9AC61 /* GoogleService-Info.plist */,
+				AA5AE4A92592D54800C9AC61 /* AppDelegate.swift */,
+				AA5AE4AB2592D54800C9AC61 /* SceneDelegate.swift */,
+				AA5AE4BE2592D62100C9AC61 /* Widgets */,
+				AA5AE4AD2592D54800C9AC61 /* ContentView.swift */,
+				AA5AE4AF2592D54900C9AC61 /* Assets.xcassets */,
+				AA5AE4B42592D54900C9AC61 /* LaunchScreen.storyboard */,
+				AA5AE4B72592D54900C9AC61 /* Info.plist */,
+				AA5AE4B12592D54900C9AC61 /* Preview Content */,
+			);
+			path = "YardSmart Employee";
+			sourceTree = "<group>";
+		};
+		AA5AE4B12592D54900C9AC61 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AA5AE4B22592D54900C9AC61 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AA5AE4BE2592D62100C9AC61 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				AA7681912592F18E00E7D37B /* Buttons.swift */,
+				AA7681942592F18E00E7D37B /* employeeList.swift */,
+				AA7681932592F18E00E7D37B /* PastJobsWidget.swift */,
+				AA5AE4C22592D6E600C9AC61 /* MapView.swift */,
+				AA5AE4BF2592D66600C9AC61 /* NewJobWidget.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		AA5AE4E62592DB6700C9AC61 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA5AE4C62592D9D500C9AC61 /* Job.swift */,
+				AA5AE4E82592DD2000C9AC61 /* Employee.swift */,
+				AA7681882592EFE900E7D37B /* Location.swift */,
+				AA76818B2592F0A700E7D37B /* Bill.swift */,
+				AA76818E2592F0C700E7D37B /* Action.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA5AE4EB2592DFDD00C9AC61 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA5AE4A52592D54800C9AC61 /* YardSmart Employee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA5AE4BA2592D54900C9AC61 /* Build configuration list for PBXNativeTarget "YardSmart Employee" */;
+			buildPhases = (
+				85E56ACF3F7714ABC7C19E83 /* [CP] Check Pods Manifest.lock */,
+				AA5AE4A22592D54800C9AC61 /* Sources */,
+				AA5AE4A32592D54800C9AC61 /* Frameworks */,
+				AA5AE4A42592D54800C9AC61 /* Resources */,
+				7783FD567F39538234459840 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "YardSmart Employee";
+			productName = "YardSmart Employee";
+			productReference = AA5AE4A62592D54800C9AC61 /* YardSmart Employee.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA5AE49E2592D54800C9AC61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					AA5AE4A52592D54800C9AC61 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = AA5AE4A12592D54800C9AC61 /* Build configuration list for PBXProject "YardSmart Employee" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA5AE49D2592D54800C9AC61;
+			productRefGroup = AA5AE4A72592D54800C9AC61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA5AE4A52592D54800C9AC61 /* YardSmart Employee */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA5AE4A42592D54800C9AC61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5AE4B62592D54900C9AC61 /* LaunchScreen.storyboard in Resources */,
+				AA5AE4CE2592DA6400C9AC61 /* GoogleService-Info.plist in Resources */,
+				AA5AE4B32592D54900C9AC61 /* Preview Assets.xcassets in Resources */,
+				AA5AE4B02592D54900C9AC61 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7783FD567F39538234459840 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YardSmart Employee/Pods-YardSmart Employee-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YardSmart Employee/Pods-YardSmart Employee-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YardSmart Employee/Pods-YardSmart Employee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85E56ACF3F7714ABC7C19E83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YardSmart Employee-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA5AE4A22592D54800C9AC61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5AE4AA2592D54800C9AC61 /* AppDelegate.swift in Sources */,
+				AA5AE4C72592D9D500C9AC61 /* Job.swift in Sources */,
+				AA7681892592EFE900E7D37B /* Location.swift in Sources */,
+				AA7681962592F18E00E7D37B /* Buttons.swift in Sources */,
+				AA76818F2592F0C700E7D37B /* Action.swift in Sources */,
+				AA5AE4AC2592D54800C9AC61 /* SceneDelegate.swift in Sources */,
+				AA5AE4E92592DD2000C9AC61 /* Employee.swift in Sources */,
+				AA7681982592F18E00E7D37B /* PastJobsWidget.swift in Sources */,
+				AA7681992592F18E00E7D37B /* employeeList.swift in Sources */,
+				AA5AE4C32592D6E600C9AC61 /* MapView.swift in Sources */,
+				AA5AE4C02592D66700C9AC61 /* NewJobWidget.swift in Sources */,
+				AA76818C2592F0A700E7D37B /* Bill.swift in Sources */,
+				AA5AE4AE2592D54800C9AC61 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AA5AE4B42592D54900C9AC61 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA5AE4B52592D54900C9AC61 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA5AE4B82592D54900C9AC61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA5AE4B92592D54900C9AC61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA5AE4BB2592D54900C9AC61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F5F59C9D309BD7710C2D758 /* Pods-YardSmart Employee.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"YardSmart Employee/Preview Content\"";
+				DEVELOPMENT_TEAM = L4YB8P25JQ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "YardSmart Employee/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "YardSmart.YardSmart-Employee";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA5AE4BC2592D54900C9AC61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12F94F5F5CACFFF562086551 /* Pods-YardSmart Employee.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"YardSmart Employee/Preview Content\"";
+				DEVELOPMENT_TEAM = L4YB8P25JQ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "YardSmart Employee/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "YardSmart.YardSmart-Employee";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA5AE4A12592D54800C9AC61 /* Build configuration list for PBXProject "YardSmart Employee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA5AE4B82592D54900C9AC61 /* Debug */,
+				AA5AE4B92592D54900C9AC61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA5AE4BA2592D54900C9AC61 /* Build configuration list for PBXNativeTarget "YardSmart Employee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA5AE4BB2592D54900C9AC61 /* Debug */,
+				AA5AE4BC2592D54900C9AC61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA5AE49E2592D54800C9AC61 /* Project object */;
+}
