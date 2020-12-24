@@ -7,12 +7,25 @@
 
 import SwiftUI
 
-var TopH:CGFloat = 80
-var TopW:CGFloat = UIScreen.main.bounds.width
+var ScreenH:CGFloat = UIScreen.main.bounds.height
+var ScreenW:CGFloat = UIScreen.main.bounds.width
+
 
 struct ContentView: View {
+    @StateObject public var jobsSO = JobsViewModel()
+    
+    public func updateData() {
+        jobsSO.getJobs()
+    }
+    
     var body: some View {
-        NewJobWidget()
+        ScrollView{
+            JobsViewer(jobs: jobsSO.jobsDB).onAppear(){
+                jobsSO.getJobs()
+            }
+            NewJobWidget()
+        }
+        
     }
 }
 
