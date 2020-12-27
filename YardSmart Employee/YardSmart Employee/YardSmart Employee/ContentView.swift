@@ -12,18 +12,16 @@ var ScreenW:CGFloat = UIScreen.main.bounds.width
 
 
 struct ContentView: View {
-    @StateObject public var jobsSO = JobsViewModel()
-    
-    public func updateData() {
-        jobsSO.getJobs()
-    }
     
     var body: some View {
-        ScrollView{
-            JobsViewer(jobs: jobsSO.jobsDB).onAppear(){
-                jobsSO.getJobs()
+        NavigationView{
+            ScrollView{
+                NavigationLink(destination: PastJobsWidget()){
+                    smallButton(text: "See Past Jobs", color: Color.blue)
+                }
+                NewJobWidget()
+                
             }
-            NewJobWidget()
         }
         
     }

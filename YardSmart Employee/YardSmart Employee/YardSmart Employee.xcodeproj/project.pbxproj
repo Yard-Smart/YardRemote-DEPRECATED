@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9106E8AAEF88D6E72E4F1659 /* Pods_YardSmart_Employee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2460445BF10E7899E4C5F951 /* Pods_YardSmart_Employee.framework */; };
+		AA44E8A6259424550005940A /* EmployeeViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA44E8A5259424550005940A /* EmployeeViewer.swift */; };
+		AA44E8A925942A710005940A /* EmployeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA44E8A825942A710005940A /* EmployeeViewModel.swift */; };
 		AA5AE4AA2592D54800C9AC61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5AE4A92592D54800C9AC61 /* AppDelegate.swift */; };
 		AA5AE4AC2592D54800C9AC61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5AE4AB2592D54800C9AC61 /* SceneDelegate.swift */; };
 		AA5AE4AE2592D54800C9AC61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5AE4AD2592D54800C9AC61 /* ContentView.swift */; };
@@ -25,12 +27,17 @@
 		AA7681962592F18E00E7D37B /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7681912592F18E00E7D37B /* Buttons.swift */; };
 		AA7681982592F18E00E7D37B /* PastJobsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7681932592F18E00E7D37B /* PastJobsWidget.swift */; };
 		AA7681992592F18E00E7D37B /* employeeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7681942592F18E00E7D37B /* employeeList.swift */; };
+		AA883A932593D91400164F01 /* locationPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA883A922593D91400164F01 /* locationPicker.swift */; };
+		AA883A962593DA3200164F01 /* JobsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA883A952593DA3200164F01 /* JobsViewModel.swift */; };
+		AA883A992593E62600164F01 /* JobsViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA883A982593E62600164F01 /* JobsViewer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		12F94F5F5CACFFF562086551 /* Pods-YardSmart Employee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YardSmart Employee.release.xcconfig"; path = "Target Support Files/Pods-YardSmart Employee/Pods-YardSmart Employee.release.xcconfig"; sourceTree = "<group>"; };
 		2460445BF10E7899E4C5F951 /* Pods_YardSmart_Employee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YardSmart_Employee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F5F59C9D309BD7710C2D758 /* Pods-YardSmart Employee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YardSmart Employee.debug.xcconfig"; path = "Target Support Files/Pods-YardSmart Employee/Pods-YardSmart Employee.debug.xcconfig"; sourceTree = "<group>"; };
+		AA44E8A5259424550005940A /* EmployeeViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeViewer.swift; sourceTree = "<group>"; };
+		AA44E8A825942A710005940A /* EmployeeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeViewModel.swift; sourceTree = "<group>"; };
 		AA5AE4A62592D54800C9AC61 /* YardSmart Employee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YardSmart Employee.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5AE4A92592D54800C9AC61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA5AE4AB2592D54800C9AC61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +57,9 @@
 		AA7681912592F18E00E7D37B /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		AA7681932592F18E00E7D37B /* PastJobsWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastJobsWidget.swift; sourceTree = "<group>"; };
 		AA7681942592F18E00E7D37B /* employeeList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = employeeList.swift; sourceTree = "<group>"; };
+		AA883A922593D91400164F01 /* locationPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationPicker.swift; sourceTree = "<group>"; };
+		AA883A952593DA3200164F01 /* JobsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsViewModel.swift; sourceTree = "<group>"; };
+		AA883A982593E62600164F01 /* JobsViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsViewer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +143,9 @@
 				AA7681932592F18E00E7D37B /* PastJobsWidget.swift */,
 				AA5AE4C22592D6E600C9AC61 /* MapView.swift */,
 				AA5AE4BF2592D66600C9AC61 /* NewJobWidget.swift */,
+				AA883A922593D91400164F01 /* locationPicker.swift */,
+				AA883A982593E62600164F01 /* JobsViewer.swift */,
+				AA44E8A5259424550005940A /* EmployeeViewer.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -152,6 +165,8 @@
 		AA5AE4EB2592DFDD00C9AC61 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				AA883A952593DA3200164F01 /* JobsViewModel.swift */,
+				AA44E8A825942A710005940A /* EmployeeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -275,15 +290,20 @@
 				AA5AE4C72592D9D500C9AC61 /* Job.swift in Sources */,
 				AA7681892592EFE900E7D37B /* Location.swift in Sources */,
 				AA7681962592F18E00E7D37B /* Buttons.swift in Sources */,
+				AA44E8A925942A710005940A /* EmployeeViewModel.swift in Sources */,
 				AA76818F2592F0C700E7D37B /* Action.swift in Sources */,
 				AA5AE4AC2592D54800C9AC61 /* SceneDelegate.swift in Sources */,
 				AA5AE4E92592DD2000C9AC61 /* Employee.swift in Sources */,
+				AA883A992593E62600164F01 /* JobsViewer.swift in Sources */,
+				AA44E8A6259424550005940A /* EmployeeViewer.swift in Sources */,
 				AA7681982592F18E00E7D37B /* PastJobsWidget.swift in Sources */,
+				AA883A932593D91400164F01 /* locationPicker.swift in Sources */,
 				AA7681992592F18E00E7D37B /* employeeList.swift in Sources */,
 				AA5AE4C32592D6E600C9AC61 /* MapView.swift in Sources */,
 				AA5AE4C02592D66700C9AC61 /* NewJobWidget.swift in Sources */,
 				AA76818C2592F0A700E7D37B /* Bill.swift in Sources */,
 				AA5AE4AE2592D54800C9AC61 /* ContentView.swift in Sources */,
+				AA883A962593DA3200164F01 /* JobsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

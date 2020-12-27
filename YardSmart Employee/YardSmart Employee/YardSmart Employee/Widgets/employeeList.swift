@@ -44,7 +44,7 @@ struct employeeOverview: View {
                     ZStack{
                         HStack {
                             Text("ID:")
-                            Text(employee.id)
+                            Text(employee.id ?? "Failed to get ID")
                         }
                         RoundedRectangle(cornerRadius: 10, style: .circular)
                             .fill(Color(UIColor.tertiarySystemFill))

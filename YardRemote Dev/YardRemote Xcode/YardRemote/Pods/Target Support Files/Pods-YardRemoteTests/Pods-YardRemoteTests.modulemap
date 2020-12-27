@@ -1,6 +1,0 @@
-framework module Pods_YardRemoteTests {
-  umbrella header "Pods-YardRemoteTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

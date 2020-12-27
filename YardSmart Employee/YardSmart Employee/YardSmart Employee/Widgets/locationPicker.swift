@@ -6,10 +6,18 @@
 //
 
 import SwiftUI
+import FirebaseFirestore
+
+struct locationOverview: View {
+    var location: Location
+    var body: some View {
+        Text("nope")
+    }
+}
 
 struct locationPicker: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("nope")
     }
 }
 

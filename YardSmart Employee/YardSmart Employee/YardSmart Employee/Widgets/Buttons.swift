@@ -13,14 +13,14 @@ struct bigButton : View {
     
     var body: some View {
         Rectangle()
-        .fill(Color.green)
-        .frame(minWidth: 180, idealWidth: TopW, maxWidth: TopW, minHeight: 100, idealHeight: 100, maxHeight: 200, alignment: .center)
+        .fill(color)
+        .frame(minWidth: 180, idealWidth: ScreenW, maxWidth: ScreenW, minHeight: 100, idealHeight: 100, maxHeight: 200, alignment: .center)
         .cornerRadius(10)
         .overlay(
             VStack{
                 HStack {
                     Text(text)
-                        .foregroundColor(color)
+                        .foregroundColor(Color(UIColor.label))
                         .font(.system(size: 20, weight: .black, design: .default))
                 }
             }.padding(5)
@@ -28,6 +28,26 @@ struct bigButton : View {
     }
 }
 
+struct smallButton : View {
+    var text: String
+    var color: Color
+    
+    var body: some View {
+        Rectangle()
+        .fill(color)
+        .frame(minWidth: 180, idealWidth: ScreenW, maxWidth: ScreenW, minHeight: 50, idealHeight: 50, maxHeight: 100, alignment: .center)
+        .cornerRadius(10)
+        .overlay(
+            VStack{
+                HStack {
+                    Text(text)
+                        .foregroundColor(Color(UIColor.label))
+                        .font(.system(size: 20, weight: .black, design: .default))
+                }
+            }.padding(5)
+        )
+    }
+}
 
 struct Buttons: View {
     var body: some View {

@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import FirebaseFirestore
 
 private var isReady: Bool = false
 private var inJob: Bool = false
+var employeeID = "Felipe"
 
 
 struct startStopButton : View {
@@ -17,7 +19,7 @@ struct startStopButton : View {
     var body: some View {
         Rectangle()
             .fill(isReady ? (isStarted ? Color.red :  Color.green) : Color.blue)
-        .frame(minWidth: 180, idealWidth: TopW, maxWidth: TopW, minHeight: 100, idealHeight: 100, maxHeight: 200, alignment: .center)
+        .frame(minWidth: 180, idealWidth: ScreenW, maxWidth: ScreenW, minHeight: 100, idealHeight: 100, maxHeight: 200, alignment: .center)
         .cornerRadius(10)
         .overlay(
             VStack{
@@ -52,7 +54,7 @@ func format(duration: TimeInterval) -> String {
     return formatter.string(from: duration)!
 }
 
-struct currentJobViewer: View {
+struct currentJobTimer: View {
     func findDateDiff(startTimeStr: String, endTimeStr: String) -> String {
         let startTime =  Date(timeIntervalSince1970: (TimeInterval(startTimeStr) ?? TimeInterval(String(Date().timeIntervalSince1970)))!)
         let interval = Date().timeIntervalSince(startTime)
@@ -70,7 +72,7 @@ struct currentJobViewer: View {
             ZStack{
                 VStack{
                     Capsule()
-                        .frame(minWidth: 50, idealWidth: TopW-50, maxWidth: TopW-20, minHeight: 5, idealHeight: 10, maxHeight: 10, alignment: .center)
+                        .frame(minWidth: 50, idealWidth: ScreenW-50, maxWidth: ScreenW-20, minHeight: 5, idealHeight: 10, maxHeight: 10, alignment: .center)
                     HStack{
                         VStack{
                             Text(getFormatedDate(date: Date(timeIntervalSince1970: TimeInterval(job.startTime)!)))
@@ -98,25 +100,62 @@ struct currentJobViewer: View {
                 RoundedRectangle(cornerRadius: 5)
                     .fill(Color(UIColor.systemFill))
             }
-            
-            
         }
     }
 }
 
 func saveJob(job: Job){
+    do {
+        let _ = try db.collection("Jobs").addDocument(from: job)
+      }
+      catch {
+        print(error)
+      }
     return
 }
 
 struct NewJobWidget: View {
     @State private var mapHeight: CGFloat = 400
-    @State var job: Job = Job(id: UUID().uuidString, startTime: String(Date().timeIntervalSince1970), endTime: String(Date().timeIntervalSince1970), locationID: "-", isDone: false, hasStarted: false, employeeIDs: [], messages: [])
+    @State var job: Job = Job(id: UUID().uuidString, startTime: String(Date().timeIntervalSince1970), endTime: String(Date().timeIntervalSince1970), locationID: "-", isDone: false, hasStarted: false, employeeIDs: [employeeID], messages: [Message(id: UUID().uuidString, timeSent: String(Date().timeIntervalSince1970), senderID: "app", recipientID: "server", title: "", message: "")])
 
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    
+    init() {
+            UITextView.appearance().backgroundColor = .clear
+        }
+
 
     var body: some View {
         VStack{
-            currentJobViewer(job: job)
+            currentJobTimer(job: job)
+            
+            ZStack{
+                RoundedRectangle(cornerRadius: 5)
+                    .fill(Color(UIColor.systemFill))
+                
+                VStack{
+                    Text("Enter Notes")
+                    TextEditor(text: $job.messages[0].message)
+                        .frame(minWidth: ScreenW/2, idealWidth: ScreenW, maxWidth: ScreenW, minHeight: ScreenH/5, idealHeight: ScreenH/5, maxHeight: ScreenH/3, alignment: .center)
+                }
+            }
+            
+            Rectangle()
+            .fill(Color(UIColor.systemFill))
+            .frame(minWidth: 180, idealWidth: ScreenW, maxWidth: ScreenW, minHeight: 10, idealHeight: 10, maxHeight: 40, alignment: .center)
+            .cornerRadius(30)
+            .overlay(
+                HStack{
+                    TextField("Type Address", text: $job.locationID)
+                        .font(.system(size: 40, weight: .black, design: .default))
+                        .padding(15)
+                }
+                
+            )
+            
+
+                
+            
             startStopButton(isStarted: inJob, isReady: isReady)
                 .onTapGesture {
                         if !isReady { //If you were not ready, then ready up
@@ -128,7 +167,8 @@ struct NewJobWidget: View {
                             job.endTime = String(Date().timeIntervalSince1970)
                             saveJob(job: job)
                             //reset Job
-                            job = Job(id: UUID().uuidString, startTime: String(Date().timeIntervalSince1970), endTime: String(Date().timeIntervalSince1970), locationID: "-", isDone: false, hasStarted: false, employeeIDs: [], messages: [])
+                            job = Job(id: UUID().uuidString, startTime: String(Date().timeIntervalSince1970), endTime: String(Date().timeIntervalSince1970), locationID: "-", isDone: false, hasStarted: false, employeeIDs: [], messages: [Message(id: UUID().uuidString, timeSent: String(Date().timeIntervalSince1970), senderID: "app", recipientID: "server", title: "", message: "")])
+
                             
                         }else{   //If you were ready and were not in a job now then start a job
                             inJob = true
