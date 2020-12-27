@@ -9,4 +9,6 @@ target 'YardSmart Employee' do
 
 pod 'Firebase/Firestore'
 pod 'Firebase/Auth'
+pod 'FirebaseFirestoreSwift'
+pod 'Firebase/Analytics'
 end

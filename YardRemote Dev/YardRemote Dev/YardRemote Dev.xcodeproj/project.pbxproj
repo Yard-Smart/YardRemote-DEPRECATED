@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,30 @@
 		AA0E30FB25943AF3001C42CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0E30FA25943AF3001C42CB /* Assets.xcassets */; };
 		AA0E30FE25943AF3001C42CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0E30FD25943AF3001C42CB /* Preview Assets.xcassets */; };
 		AA0E310125943AF3001C42CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA0E30FF25943AF3001C42CB /* LaunchScreen.storyboard */; };
+		AA0E312225943D22001C42CB /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E311D25943D22001C42CB /* Location.swift */; };
+		AA0E312325943D22001C42CB /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E311E25943D22001C42CB /* Employee.swift */; };
+		AA0E312425943D22001C42CB /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E311F25943D22001C42CB /* Bill.swift */; };
+		AA0E312525943D22001C42CB /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E312025943D22001C42CB /* Action.swift */; };
+		AA0E312625943D22001C42CB /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E312125943D22001C42CB /* Job.swift */; };
+		AA0E312B25943D29001C42CB /* EmployeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E312925943D29001C42CB /* EmployeeViewModel.swift */; };
+		AA0E312C25943D29001C42CB /* JobsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E312A25943D29001C42CB /* JobsViewModel.swift */; };
+		AA0E313725943D31001C42CB /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E312F25943D31001C42CB /* Buttons.swift */; };
+		AA0E313825943D31001C42CB /* locationPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E313025943D31001C42CB /* locationPicker.swift */; };
+		AA0E313A25943D31001C42CB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E313225943D31001C42CB /* MapView.swift */; };
+		AA0E313B25943D31001C42CB /* JobsViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E313325943D31001C42CB /* JobsViewer.swift */; };
+		AA0E313C25943D31001C42CB /* NewJobWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E313425943D31001C42CB /* NewJobWidget.swift */; };
+		AA0E313D25943D31001C42CB /* PastJobsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E313525943D31001C42CB /* PastJobsWidget.swift */; };
+		AA0E313E25943D31001C42CB /* EmployeeEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E313625943D31001C42CB /* EmployeeEditor.swift */; };
+		AA8061A2259452A00055A0BE /* EmployeeCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8061A1259452A00055A0BE /* EmployeeCreator.swift */; };
+		AA8061A7259456670055A0BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA8061A6259456670055A0BE /* GoogleService-Info.plist */; };
+		AAE0D19A2594777E002A505B /* EmployeePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE0D1992594777E002A505B /* EmployeePicker.swift */; };
+		BDF3B64EE9708861CA222623 /* Pods_YardRemote_Dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC05E3CBA98DCA80383AB19 /* Pods_YardRemote_Dev.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39D856796F76BB46748176D1 /* Pods-YardRemote Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YardRemote Dev.release.xcconfig"; path = "Target Support Files/Pods-YardRemote Dev/Pods-YardRemote Dev.release.xcconfig"; sourceTree = "<group>"; };
+		7FC05E3CBA98DCA80383AB19 /* Pods_YardRemote_Dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YardRemote_Dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E3777FAF945E771801CAF06 /* Pods-YardRemote Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YardRemote Dev.debug.xcconfig"; path = "Target Support Files/Pods-YardRemote Dev/Pods-YardRemote Dev.debug.xcconfig"; sourceTree = "<group>"; };
 		AA0E30F125943AF3001C42CB /* YardRemote Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YardRemote Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0E30F425943AF3001C42CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA0E30F625943AF3001C42CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +45,23 @@
 		AA0E30FD25943AF3001C42CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AA0E310025943AF3001C42CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA0E310225943AF3001C42CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA0E311D25943D22001C42CB /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		AA0E311E25943D22001C42CB /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		AA0E311F25943D22001C42CB /* Bill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
+		AA0E312025943D22001C42CB /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		AA0E312125943D22001C42CB /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		AA0E312925943D29001C42CB /* EmployeeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeViewModel.swift; sourceTree = "<group>"; };
+		AA0E312A25943D29001C42CB /* JobsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobsViewModel.swift; sourceTree = "<group>"; };
+		AA0E312F25943D31001C42CB /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		AA0E313025943D31001C42CB /* locationPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locationPicker.swift; sourceTree = "<group>"; };
+		AA0E313225943D31001C42CB /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		AA0E313325943D31001C42CB /* JobsViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobsViewer.swift; sourceTree = "<group>"; };
+		AA0E313425943D31001C42CB /* NewJobWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewJobWidget.swift; sourceTree = "<group>"; };
+		AA0E313525943D31001C42CB /* PastJobsWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastJobsWidget.swift; sourceTree = "<group>"; };
+		AA0E313625943D31001C42CB /* EmployeeEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeEditor.swift; sourceTree = "<group>"; };
+		AA8061A1259452A00055A0BE /* EmployeeCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCreator.swift; sourceTree = "<group>"; };
+		AA8061A6259456670055A0BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../YardSmart Employee/YardSmart Employee/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AAE0D1992594777E002A505B /* EmployeePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +69,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDF3B64EE9708861CA222623 /* Pods_YardRemote_Dev.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16778E9719D9E4C4C0825E9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FC05E3CBA98DCA80383AB19 /* Pods_YardRemote_Dev.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5CEF0B2A94D72B858C3E09D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E3777FAF945E771801CAF06 /* Pods-YardRemote Dev.debug.xcconfig */,
+				39D856796F76BB46748176D1 /* Pods-YardRemote Dev.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AA0E30E825943AF3001C42CB = {
 			isa = PBXGroup;
 			children = (
 				AA0E30F325943AF3001C42CB /* YardRemote Dev */,
 				AA0E30F225943AF3001C42CB /* Products */,
+				5CEF0B2A94D72B858C3E09D8 /* Pods */,
+				16778E9719D9E4C4C0825E9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +114,12 @@
 		AA0E30F325943AF3001C42CB /* YardRemote Dev */ = {
 			isa = PBXGroup;
 			children = (
+				AA8061A92594621C0055A0BE /* ModelRepresentations */,
+				AA8061A6259456670055A0BE /* GoogleService-Info.plist */,
+				AA8061A4259452AC0055A0BE /* Pages */,
+				AA0E312825943D29001C42CB /* ViewModels */,
+				AA0E312E25943D31001C42CB /* Widgets */,
+				AA0E311C25943D22001C42CB /* Models */,
 				AA0E30F425943AF3001C42CB /* AppDelegate.swift */,
 				AA0E30F625943AF3001C42CB /* SceneDelegate.swift */,
 				AA0E30F825943AF3001C42CB /* ContentView.swift */,
@@ -75,6 +139,58 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		AA0E311C25943D22001C42CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA0E311D25943D22001C42CB /* Location.swift */,
+				AA0E311E25943D22001C42CB /* Employee.swift */,
+				AA0E311F25943D22001C42CB /* Bill.swift */,
+				AA0E312025943D22001C42CB /* Action.swift */,
+				AA0E312125943D22001C42CB /* Job.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA0E312825943D29001C42CB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AA0E312925943D29001C42CB /* EmployeeViewModel.swift */,
+				AA0E312A25943D29001C42CB /* JobsViewModel.swift */,
+			);
+			name = ViewModels;
+			path = "YardRemote Dev/ViewModels";
+			sourceTree = SOURCE_ROOT;
+		};
+		AA0E312E25943D31001C42CB /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				AA0E312F25943D31001C42CB /* Buttons.swift */,
+				AA0E313025943D31001C42CB /* locationPicker.swift */,
+				AA0E313225943D31001C42CB /* MapView.swift */,
+				AA0E313425943D31001C42CB /* NewJobWidget.swift */,
+				AA0E313525943D31001C42CB /* PastJobsWidget.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		AA8061A4259452AC0055A0BE /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				AA8061A1259452A00055A0BE /* EmployeeCreator.swift */,
+				AAE0D1992594777E002A505B /* EmployeePicker.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		AA8061A92594621C0055A0BE /* ModelRepresentations */ = {
+			isa = PBXGroup;
+			children = (
+				AA0E313625943D31001C42CB /* EmployeeEditor.swift */,
+				AA0E313325943D31001C42CB /* JobsViewer.swift */,
+			);
+			path = ModelRepresentations;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA0E310525943AF3001C42CB /* Build configuration list for PBXNativeTarget "YardRemote Dev" */;
 			buildPhases = (
+				3391E9F16AB70B58E93C111F /* [CP] Check Pods Manifest.lock */,
 				AA0E30ED25943AF3001C42CB /* Sources */,
 				AA0E30EE25943AF3001C42CB /* Frameworks */,
 				AA0E30EF25943AF3001C42CB /* Resources */,
+				C40FB79C363B898E48D99CD2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA0E310125943AF3001C42CB /* LaunchScreen.storyboard in Resources */,
+				AA8061A7259456670055A0BE /* GoogleService-Info.plist in Resources */,
 				AA0E30FE25943AF3001C42CB /* Preview Assets.xcassets in Resources */,
 				AA0E30FB25943AF3001C42CB /* Assets.xcassets in Resources */,
 			);
@@ -140,14 +259,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3391E9F16AB70B58E93C111F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YardRemote Dev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C40FB79C363B898E48D99CD2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YardRemote Dev/Pods-YardRemote Dev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YardRemote Dev/Pods-YardRemote Dev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YardRemote Dev/Pods-YardRemote Dev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AA0E30ED25943AF3001C42CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA0E312C25943D29001C42CB /* JobsViewModel.swift in Sources */,
+				AA0E313D25943D31001C42CB /* PastJobsWidget.swift in Sources */,
 				AA0E30F525943AF3001C42CB /* AppDelegate.swift in Sources */,
+				AA0E313825943D31001C42CB /* locationPicker.swift in Sources */,
 				AA0E30F725943AF3001C42CB /* SceneDelegate.swift in Sources */,
+				AA0E313725943D31001C42CB /* Buttons.swift in Sources */,
+				AA0E312225943D22001C42CB /* Location.swift in Sources */,
+				AA8061A2259452A00055A0BE /* EmployeeCreator.swift in Sources */,
+				AA0E313C25943D31001C42CB /* NewJobWidget.swift in Sources */,
+				AAE0D19A2594777E002A505B /* EmployeePicker.swift in Sources */,
+				AA0E312325943D22001C42CB /* Employee.swift in Sources */,
+				AA0E313A25943D31001C42CB /* MapView.swift in Sources */,
+				AA0E312B25943D29001C42CB /* EmployeeViewModel.swift in Sources */,
+				AA0E313E25943D31001C42CB /* EmployeeEditor.swift in Sources */,
+				AA0E312525943D22001C42CB /* Action.swift in Sources */,
+				AA0E312425943D22001C42CB /* Bill.swift in Sources */,
+				AA0E313B25943D31001C42CB /* JobsViewer.swift in Sources */,
 				AA0E30F925943AF3001C42CB /* ContentView.swift in Sources */,
+				AA0E312625943D22001C42CB /* Job.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +460,7 @@
 		};
 		AA0E310625943AF3001C42CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E3777FAF945E771801CAF06 /* Pods-YardRemote Dev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,6 +469,7 @@
 				DEVELOPMENT_TEAM = L4YB8P25JQ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "YardRemote Dev/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +483,7 @@
 		};
 		AA0E310725943AF3001C42CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39D856796F76BB46748176D1 /* Pods-YardRemote Dev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +492,7 @@
 				DEVELOPMENT_TEAM = L4YB8P25JQ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "YardRemote Dev/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
