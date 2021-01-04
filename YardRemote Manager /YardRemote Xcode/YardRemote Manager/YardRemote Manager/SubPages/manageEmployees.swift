@@ -9,7 +9,7 @@ import SwiftUI
 import Firebase
 import FirebaseFirestore
 
-let employeesREF = Firebase.Firestore.collection("cities").document("SF")
+
 
 
 struct manageEmployees: View {

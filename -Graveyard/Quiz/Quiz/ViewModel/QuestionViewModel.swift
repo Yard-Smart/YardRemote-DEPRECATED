@@ -12,7 +12,7 @@ class QuestionViewModel: ObservableObject {
 
     @Published var questions : [Question] = []
     
-    func getQuestions(set: String){
+    public func getQuestions(set: String){
         
         // since were having only one set in firestore so were going to fetch that one only..
         // you can add round 2,3... into firestore and can be fetched....

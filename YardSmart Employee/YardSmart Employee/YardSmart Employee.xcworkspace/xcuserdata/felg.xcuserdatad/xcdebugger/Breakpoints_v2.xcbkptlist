@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "83529A10-08B9-4301-9623-22D3E146F25C"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B34D06D3-0E4C-406B-89E7-B5C9E8E4EAA3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YardSmart Employee/Widgets/JobsViewer.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "B34D06D3-0E4C-406B-89E7-B5C9E8E4EAA3 - 2f4c77d81d06b2be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.Shape.fill&lt;A where A1: SwiftUI.ShapeStyle&gt;(_: A1, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0)&gt;&gt;, SwiftUI.Spacer, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.Shape.fill&lt;A where A1: SwiftUI.ShapeStyle&gt;(_: A1, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.Shape.fill&lt;A where A1: SwiftUI.ShapeStyle&gt;(_: A1, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0)&gt;&gt;, SwiftUI.Spacer)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt;&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.Shape.fill&lt;A where A1: SwiftUI.ShapeStyle&gt;(_: A1, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0)&gt;&gt;, SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt;&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.Shape.fill&lt;A where A1: SwiftUI.ShapeStyle&gt;(_: A1, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0)&gt;&gt;)&gt;&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.Shape.fill&lt;A where A1: SwiftUI.ShapeStyle&gt;(_: A1, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0)&gt;&gt;, SwiftUI.Spacer, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.Shape.fill&lt;A where A1: SwiftUI.ShapeStyle&gt;(_: A1, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.Shape.fill&lt;A where A1: SwiftUI.ShapeStyle&gt;(_: A1, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0)&gt;&gt;, SwiftUI.Spacer)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt;&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.Shape.fill&lt;A where A1: SwiftUI.ShapeStyle&gt;(_: A1, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0)&gt;&gt;, SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt;&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.Shape.fill&lt;A where A1: SwiftUI.ShapeStyle&gt;(_: A1, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0)&gt;&gt;)&gt;&gt;)&gt;&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.Shape.fill&lt;A where A1: SwiftUI.ShapeStyle&gt;(_: A1, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0)&gt; in YardSmart_Employee.JobOverview.body.getter : some"
+                  moduleName = "YardSmart Employee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/felg/Documents/Proyects/YardRemote/YardRemote%20Git/YardSmart%20Employee/YardSmart%20Employee/YardSmart%20Employee/Widgets/JobsViewer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "1048">
+               </Location>
+               <Location
+                  uuid = "B34D06D3-0E4C-406B-89E7-B5C9E8E4EAA3 - 1ce4bb810c6fe6e8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.Shape.fill&lt;A where A1: SwiftUI.ShapeStyle&gt;(_: A1, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0)&gt;&gt;, SwiftUI.Spacer)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.Shape.fill&lt;A where A1: SwiftUI.ShapeStyle&gt;(_: A1, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0)&gt;&gt;, SwiftUI.Spacer, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.Shape.fill&lt;A where A1: SwiftUI.ShapeStyle&gt;(_: A1, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.Shape.fill&lt;A where A1: SwiftUI.ShapeStyle&gt;(_: A1, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0)&gt;&gt;, SwiftUI.Spacer)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt;&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.Shape.fill&lt;A where A1: SwiftUI.ShapeStyle&gt;(_: A1, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0)&gt;&gt;, SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt;&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.Shape.fill&lt;A where A1: SwiftUI.ShapeStyle&gt;(_: A1, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0)&gt;&gt;)&gt;&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.Shape.fill&lt;A where A1: SwiftUI.ShapeStyle&gt;(_: A1, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0)&gt;&gt;, SwiftUI.Spacer, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.Shape.fill&lt;A where A1: SwiftUI.ShapeStyle&gt;(_: A1, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.Shape.fill&lt;A where A1: SwiftUI.ShapeStyle&gt;(_: A1, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0)&gt;&gt;, SwiftUI.Spacer)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt;&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.Shape.fill&lt;A where A1: SwiftUI.ShapeStyle&gt;(_: A1, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0)&gt;&gt;, SwiftUI.ZStack&lt;SwiftUI.TupleView&lt;(SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt;&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.Shape.fill&lt;A where A1: SwiftUI.ShapeStyle&gt;(_: A1, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0)&gt;&gt;)&gt;&gt;)&gt;&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.Shape.fill&lt;A where A1: SwiftUI.ShapeStyle&gt;(_: A1, style: SwiftUI.FillStyle) -&gt; some&gt;&gt;.0)&gt; in YardSmart_Employee.JobOverview.body.getter : some"
+                  moduleName = "YardSmart Employee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/felg/Documents/Proyects/YardRemote/YardRemote%20Git/YardSmart%20Employee/YardSmart%20Employee/YardSmart%20Employee/Widgets/JobsViewer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "620">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -9,21 +9,21 @@ import SwiftUI
 
 var ScreenH:CGFloat = UIScreen.main.bounds.height
 var ScreenW:CGFloat = UIScreen.main.bounds.width
+var username: String = "Felg"
+var appname: String = "YardRemote Dev"
 
 
 struct ContentView: View {
-    @StateObject public var jobsSO = JobsViewModel()
-    
-    public func updateData() {
-        jobsSO.getJobs()
-    }
-    
+    @ObservedObject public var employeesSO = EmployeeViewModel()
     var body: some View {
-        ScrollView{
-            JobsViewer(jobs: jobsSO.jobsDB).onAppear(){
-                jobsSO.getJobs()
+        NavigationView{
+            ScrollView{
+                NavigationLink(destination: PastJobsWidget()){
+                    smallButton(text: "See Past Jobs", color: Color.blue)
+                }
+                NewJobWidget(employeesSO: employeesSO)
+                
             }
-            NewJobWidget()
         }
         
     }
