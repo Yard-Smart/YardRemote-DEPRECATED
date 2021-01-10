@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Action: Identifiable, Hashable, Equatable{
+struct Action: Identifiable, Codable, Equatable{
     let id: String
     let name: String
     let avaliability: String

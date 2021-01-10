@@ -10,29 +10,34 @@
 		0C5DCFAA991EE24F7F12A3DF /* Pods_YardRemote_Manager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD313FB38DC21573298C5E0E /* Pods_YardRemote_Manager.framework */; };
 		675EC645A801BDF4266CCB63 /* Pods_YardRemote_Manager_YardRemote_ManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E8EE145A817F2B2162B497F /* Pods_YardRemote_Manager_YardRemote_ManagerUITests.framework */; };
 		AA1BE793258EB0FB00A57433 /* managementWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1BE792258EB0FB00A57433 /* managementWidget.swift */; };
-		AA1BE798258EB14800A57433 /* manageEmployees.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1BE797258EB14800A57433 /* manageEmployees.swift */; };
-		AA1BE79D258EB1CE00A57433 /* addEmployee.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1BE79C258EB1CE00A57433 /* addEmployee.swift */; };
-		AA1BE7A2258EB20300A57433 /* NewJobWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1BE7A1258EB20300A57433 /* NewJobWidget.swift */; };
-		AA1BE7AA258EB30C00A57433 /* PastJobsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1BE7A9258EB30C00A57433 /* PastJobsWidget.swift */; };
-		AA1BE7AF258EC0CE00A57433 /* editEmployee.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1BE7AE258EC0CE00A57433 /* editEmployee.swift */; };
-		AA1BE7B72590115F00A57433 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1BE7B62590115F00A57433 /* Buttons.swift */; };
-		AA53602B258A594200D2C5A3 /* SignInGoogle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA53602A258A594200D2C5A3 /* SignInGoogle.swift */; };
+		AA2BA84A25A28DC5004D98CC /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BA83225A28DC5004D98CC /* Location.swift */; };
+		AA2BA84B25A28DC5004D98CC /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BA83325A28DC5004D98CC /* Event.swift */; };
+		AA2BA84C25A28DC5004D98CC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BA83425A28DC5004D98CC /* Message.swift */; };
+		AA2BA84D25A28DC5004D98CC /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BA83525A28DC5004D98CC /* Employee.swift */; };
+		AA2BA84E25A28DC5004D98CC /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BA83625A28DC5004D98CC /* Bill.swift */; };
+		AA2BA84F25A28DC5004D98CC /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BA83725A28DC5004D98CC /* Action.swift */; };
+		AA2BA85025A28DC5004D98CC /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BA83825A28DC5004D98CC /* Job.swift */; };
+		AA2BA85125A28DC5004D98CC /* EmployeeViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BA83A25A28DC5004D98CC /* EmployeeViewer.swift */; };
+		AA2BA85225A28DC5004D98CC /* EmployeePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BA83C25A28DC5004D98CC /* EmployeePicker.swift */; };
+		AA2BA85325A28DC5004D98CC /* manageEmployees.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BA83D25A28DC5004D98CC /* manageEmployees.swift */; };
+		AA2BA85425A28DC5004D98CC /* SignInGoogle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BA83E25A28DC5004D98CC /* SignInGoogle.swift */; };
+		AA2BA85525A28DC5004D98CC /* EmployeeCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BA83F25A28DC5004D98CC /* EmployeeCreator.swift */; };
+		AA2BA85625A28DC5004D98CC /* InfoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BA84125A28DC5004D98CC /* InfoWidget.swift */; };
+		AA2BA85725A28DC5004D98CC /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BA84225A28DC5004D98CC /* Buttons.swift */; };
+		AA2BA85825A28DC5004D98CC /* LocationMasterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BA84325A28DC5004D98CC /* LocationMasterList.swift */; };
+		AA2BA85925A28DC5004D98CC /* locationPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BA84425A28DC5004D98CC /* locationPicker.swift */; };
+		AA2BA85A25A28DC5004D98CC /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BA84525A28DC5004D98CC /* MapView.swift */; };
+		AA2BA85B25A28DC5004D98CC /* NewJobWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BA84625A28DC5004D98CC /* NewJobWidget.swift */; };
+		AA2BA85C25A28DC5004D98CC /* PastJobsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BA84725A28DC5004D98CC /* PastJobsWidget.swift */; };
+		AA2BA85D25A28DC5004D98CC /* InformationWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BA84825A28DC5004D98CC /* InformationWidget.swift */; };
+		AA2BA85E25A28DC5004D98CC /* ServiceLogos.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BA84925A28DC5004D98CC /* ServiceLogos.swift */; };
 		AA6ADF262589E4AA007F9FB6 /* YardRemote_ManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6ADF252589E4AA007F9FB6 /* YardRemote_ManagerApp.swift */; };
 		AA6ADF2A2589E4AB007F9FB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA6ADF292589E4AB007F9FB6 /* Assets.xcassets */; };
 		AA6ADF2D2589E4AB007F9FB6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA6ADF2C2589E4AB007F9FB6 /* Preview Assets.xcassets */; };
 		AA6ADF382589E4AB007F9FB6 /* YardRemote_ManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6ADF372589E4AB007F9FB6 /* YardRemote_ManagerTests.swift */; };
 		AA6ADF432589E4AC007F9FB6 /* YardRemote_ManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6ADF422589E4AC007F9FB6 /* YardRemote_ManagerUITests.swift */; };
-		AA6ADF7B2589E827007F9FB6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6ADF7A2589E827007F9FB6 /* MapView.swift */; };
 		AA6ADF802589E928007F9FB6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA6ADF7F2589E928007F9FB6 /* GoogleService-Info.plist */; };
 		AA6ADF922589F66D007F9FB6 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6ADF912589F66D007F9FB6 /* HomePage.swift */; };
-		AA759670259016C400C42852 /* employeeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA75966F259016C400C42852 /* employeeList.swift */; };
-		AAE0D18625947327002A505B /* JobsViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE0D18425947327002A505B /* JobsViewer.swift */; };
-		AAE0D18725947327002A505B /* EmployeeViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE0D18525947327002A505B /* EmployeeViewer.swift */; };
-		AAE0D19125947338002A505B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE0D18C25947337002A505B /* Location.swift */; };
-		AAE0D19225947338002A505B /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE0D18D25947337002A505B /* Employee.swift */; };
-		AAE0D19325947338002A505B /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE0D18E25947337002A505B /* Bill.swift */; };
-		AAE0D19425947338002A505B /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE0D18F25947337002A505B /* Action.swift */; };
-		AAE0D19525947338002A505B /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE0D19025947337002A505B /* Job.swift */; };
 		FEFF49089F78F14E8B27F464 /* Pods_YardRemote_ManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 803F2504694EDDB9772C75B3 /* Pods_YardRemote_ManagerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,13 +67,27 @@
 		92B99A7B1ABDC0D0B31E6E90 /* Pods-YardRemote Manager-YardRemote ManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YardRemote Manager-YardRemote ManagerUITests.release.xcconfig"; path = "Target Support Files/Pods-YardRemote Manager-YardRemote ManagerUITests/Pods-YardRemote Manager-YardRemote ManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		99231407A3453AF8AAB736A1 /* Pods-YardRemote ManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YardRemote ManagerTests.debug.xcconfig"; path = "Target Support Files/Pods-YardRemote ManagerTests/Pods-YardRemote ManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA1BE792258EB0FB00A57433 /* managementWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = managementWidget.swift; sourceTree = "<group>"; };
-		AA1BE797258EB14800A57433 /* manageEmployees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = manageEmployees.swift; sourceTree = "<group>"; };
-		AA1BE79C258EB1CE00A57433 /* addEmployee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addEmployee.swift; sourceTree = "<group>"; };
-		AA1BE7A1258EB20300A57433 /* NewJobWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJobWidget.swift; sourceTree = "<group>"; };
-		AA1BE7A9258EB30C00A57433 /* PastJobsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastJobsWidget.swift; sourceTree = "<group>"; };
-		AA1BE7AE258EC0CE00A57433 /* editEmployee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editEmployee.swift; sourceTree = "<group>"; };
-		AA1BE7B62590115F00A57433 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
-		AA53602A258A594200D2C5A3 /* SignInGoogle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInGoogle.swift; sourceTree = "<group>"; };
+		AA2BA83225A28DC5004D98CC /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		AA2BA83325A28DC5004D98CC /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		AA2BA83425A28DC5004D98CC /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		AA2BA83525A28DC5004D98CC /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		AA2BA83625A28DC5004D98CC /* Bill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
+		AA2BA83725A28DC5004D98CC /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		AA2BA83825A28DC5004D98CC /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		AA2BA83A25A28DC5004D98CC /* EmployeeViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeViewer.swift; sourceTree = "<group>"; };
+		AA2BA83C25A28DC5004D98CC /* EmployeePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeePicker.swift; sourceTree = "<group>"; };
+		AA2BA83D25A28DC5004D98CC /* manageEmployees.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = manageEmployees.swift; sourceTree = "<group>"; };
+		AA2BA83E25A28DC5004D98CC /* SignInGoogle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInGoogle.swift; sourceTree = "<group>"; };
+		AA2BA83F25A28DC5004D98CC /* EmployeeCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeCreator.swift; sourceTree = "<group>"; };
+		AA2BA84125A28DC5004D98CC /* InfoWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoWidget.swift; sourceTree = "<group>"; };
+		AA2BA84225A28DC5004D98CC /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		AA2BA84325A28DC5004D98CC /* LocationMasterList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationMasterList.swift; sourceTree = "<group>"; };
+		AA2BA84425A28DC5004D98CC /* locationPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locationPicker.swift; sourceTree = "<group>"; };
+		AA2BA84525A28DC5004D98CC /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		AA2BA84625A28DC5004D98CC /* NewJobWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewJobWidget.swift; sourceTree = "<group>"; };
+		AA2BA84725A28DC5004D98CC /* PastJobsWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastJobsWidget.swift; sourceTree = "<group>"; };
+		AA2BA84825A28DC5004D98CC /* InformationWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationWidget.swift; sourceTree = "<group>"; };
+		AA2BA84925A28DC5004D98CC /* ServiceLogos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLogos.swift; sourceTree = "<group>"; };
 		AA6ADF222589E4AA007F9FB6 /* YardRemote Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YardRemote Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA6ADF252589E4AA007F9FB6 /* YardRemote_ManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YardRemote_ManagerApp.swift; sourceTree = "<group>"; };
 		AA6ADF292589E4AB007F9FB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,17 +99,8 @@
 		AA6ADF3E2589E4AC007F9FB6 /* YardRemote ManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "YardRemote ManagerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA6ADF422589E4AC007F9FB6 /* YardRemote_ManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YardRemote_ManagerUITests.swift; sourceTree = "<group>"; };
 		AA6ADF442589E4AC007F9FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA6ADF7A2589E827007F9FB6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		AA6ADF7F2589E928007F9FB6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		AA6ADF912589F66D007F9FB6 /* HomePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
-		AA75966F259016C400C42852 /* employeeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = employeeList.swift; sourceTree = "<group>"; };
-		AAE0D18425947327002A505B /* JobsViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobsViewer.swift; sourceTree = "<group>"; };
-		AAE0D18525947327002A505B /* EmployeeViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeViewer.swift; sourceTree = "<group>"; };
-		AAE0D18C25947337002A505B /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		AAE0D18D25947337002A505B /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
-		AAE0D18E25947337002A505B /* Bill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
-		AAE0D18F25947337002A505B /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
-		AAE0D19025947337002A505B /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 		ACF1CAA4A4AA1C2AA4A0AA18 /* Pods-YardRemote Manager-YardRemote ManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YardRemote Manager-YardRemote ManagerUITests.debug.xcconfig"; path = "Target Support Files/Pods-YardRemote Manager-YardRemote ManagerUITests/Pods-YardRemote Manager-YardRemote ManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FD313FB38DC21573298C5E0E /* Pods_YardRemote_Manager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YardRemote_Manager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -150,24 +160,85 @@
 			isa = PBXGroup;
 			children = (
 				AA1BE792258EB0FB00A57433 /* managementWidget.swift */,
-				AA1BE7A1258EB20300A57433 /* NewJobWidget.swift */,
-				AA1BE79C258EB1CE00A57433 /* addEmployee.swift */,
-				AA6ADF7A2589E827007F9FB6 /* MapView.swift */,
-				AA1BE7A9258EB30C00A57433 /* PastJobsWidget.swift */,
-				AA1BE7AE258EC0CE00A57433 /* editEmployee.swift */,
-				AA1BE7B62590115F00A57433 /* Buttons.swift */,
-				AA75966F259016C400C42852 /* employeeList.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
 		};
-		AA1BE788258EAE8300A57433 /* SubPages */ = {
+		AA2BA82E25A28DC5004D98CC /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				AA53602A258A594200D2C5A3 /* SignInGoogle.swift */,
-				AA1BE797258EB14800A57433 /* manageEmployees.swift */,
+				AA2BA82F25A28DC5004D98CC /* ViewModels */,
+				AA2BA83025A28DC5004D98CC /* Logos */,
+				AA2BA83125A28DC5004D98CC /* CommonModels */,
+				AA2BA83925A28DC5004D98CC /* ModelRepresentations */,
+				AA2BA83B25A28DC5004D98CC /* Pages */,
+				AA2BA84025A28DC5004D98CC /* Widgets */,
 			);
-			path = SubPages;
+			name = Common;
+			path = ../../../../Common;
+			sourceTree = "<group>";
+		};
+		AA2BA82F25A28DC5004D98CC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AA2BA83025A28DC5004D98CC /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Logos;
+			sourceTree = "<group>";
+		};
+		AA2BA83125A28DC5004D98CC /* CommonModels */ = {
+			isa = PBXGroup;
+			children = (
+				AA2BA83225A28DC5004D98CC /* Location.swift */,
+				AA2BA83325A28DC5004D98CC /* Event.swift */,
+				AA2BA83425A28DC5004D98CC /* Message.swift */,
+				AA2BA83525A28DC5004D98CC /* Employee.swift */,
+				AA2BA83625A28DC5004D98CC /* Bill.swift */,
+				AA2BA83725A28DC5004D98CC /* Action.swift */,
+				AA2BA83825A28DC5004D98CC /* Job.swift */,
+			);
+			path = CommonModels;
+			sourceTree = "<group>";
+		};
+		AA2BA83925A28DC5004D98CC /* ModelRepresentations */ = {
+			isa = PBXGroup;
+			children = (
+				AA2BA83A25A28DC5004D98CC /* EmployeeViewer.swift */,
+			);
+			path = ModelRepresentations;
+			sourceTree = "<group>";
+		};
+		AA2BA83B25A28DC5004D98CC /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				AA2BA83C25A28DC5004D98CC /* EmployeePicker.swift */,
+				AA2BA83D25A28DC5004D98CC /* manageEmployees.swift */,
+				AA2BA83E25A28DC5004D98CC /* SignInGoogle.swift */,
+				AA2BA83F25A28DC5004D98CC /* EmployeeCreator.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		AA2BA84025A28DC5004D98CC /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				AA2BA84125A28DC5004D98CC /* InfoWidget.swift */,
+				AA2BA84225A28DC5004D98CC /* Buttons.swift */,
+				AA2BA84325A28DC5004D98CC /* LocationMasterList.swift */,
+				AA2BA84425A28DC5004D98CC /* locationPicker.swift */,
+				AA2BA84525A28DC5004D98CC /* MapView.swift */,
+				AA2BA84625A28DC5004D98CC /* NewJobWidget.swift */,
+				AA2BA84725A28DC5004D98CC /* PastJobsWidget.swift */,
+				AA2BA84825A28DC5004D98CC /* InformationWidget.swift */,
+				AA2BA84925A28DC5004D98CC /* ServiceLogos.swift */,
+			);
+			path = Widgets;
 			sourceTree = "<group>";
 		};
 		AA6ADF192589E4AA007F9FB6 = {
@@ -195,11 +266,9 @@
 		AA6ADF242589E4AA007F9FB6 /* YardRemote Manager */ = {
 			isa = PBXGroup;
 			children = (
-				AAE0D18B25947337002A505B /* Models */,
-				AAE0D18325947327002A505B /* ModelRepresentations */,
-				AA6ADF912589F66D007F9FB6 /* HomePage.swift */,
-				AA1BE788258EAE8300A57433 /* SubPages */,
+				AA2BA82E25A28DC5004D98CC /* Common */,
 				AA1BE787258EAE5E00A57433 /* Widgets */,
+				AA6ADF912589F66D007F9FB6 /* HomePage.swift */,
 				AA6ADF7F2589E928007F9FB6 /* GoogleService-Info.plist */,
 				AA6ADF252589E4AA007F9FB6 /* YardRemote_ManagerApp.swift */,
 				AA6ADF292589E4AB007F9FB6 /* Assets.xcassets */,
@@ -235,27 +304,6 @@
 			path = "YardRemote ManagerUITests";
 			sourceTree = "<group>";
 		};
-		AAE0D18325947327002A505B /* ModelRepresentations */ = {
-			isa = PBXGroup;
-			children = (
-				AAE0D18425947327002A505B /* JobsViewer.swift */,
-				AAE0D18525947327002A505B /* EmployeeViewer.swift */,
-			);
-			path = ModelRepresentations;
-			sourceTree = "<group>";
-		};
-		AAE0D18B25947337002A505B /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				AAE0D18C25947337002A505B /* Location.swift */,
-				AAE0D18D25947337002A505B /* Employee.swift */,
-				AAE0D18E25947337002A505B /* Bill.swift */,
-				AAE0D18F25947337002A505B /* Action.swift */,
-				AAE0D19025947337002A505B /* Job.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -268,7 +316,7 @@
 				AA6ADF1F2589E4AA007F9FB6 /* Frameworks */,
 				AA6ADF202589E4AA007F9FB6 /* Resources */,
 				95FED495E3CB81B7FEDB34D2 /* [CP] Embed Pods Frameworks */,
-				7D16DE1814070A9C5EDE3BBE /* [CP] Copy Pods Resources */,
+				230E1D2617EB136E7240BEE9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -307,7 +355,7 @@
 				AA6ADF3B2589E4AC007F9FB6 /* Frameworks */,
 				AA6ADF3C2589E4AC007F9FB6 /* Resources */,
 				8B47AE18C6C74BBD018DC096 /* [CP] Embed Pods Frameworks */,
-				BB7D1E1E37D4BFFE26525A0F /* [CP] Copy Pods Resources */,
+				06312205A8AF0BDD76A7D79F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -389,6 +437,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		06312205A8AF0BDD76A7D79F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YardRemote Manager-YardRemote ManagerUITests/Pods-YardRemote Manager-YardRemote ManagerUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YardRemote Manager-YardRemote ManagerUITests/Pods-YardRemote Manager-YardRemote ManagerUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YardRemote Manager-YardRemote ManagerUITests/Pods-YardRemote Manager-YardRemote ManagerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		0D515384BAFA93FD39C9D3B8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -409,6 +474,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		230E1D2617EB136E7240BEE9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YardRemote Manager/Pods-YardRemote Manager-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YardRemote Manager/Pods-YardRemote Manager-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YardRemote Manager/Pods-YardRemote Manager-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3CC02F123040E59BDD99FA67 /* [CP] Check Pods Manifest.lock */ = {
@@ -455,23 +537,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7D16DE1814070A9C5EDE3BBE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YardRemote Manager/Pods-YardRemote Manager-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YardRemote Manager/Pods-YardRemote Manager-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YardRemote Manager/Pods-YardRemote Manager-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8B47AE18C6C74BBD018DC096 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -506,23 +571,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YardRemote Manager/Pods-YardRemote Manager-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BB7D1E1E37D4BFFE26525A0F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YardRemote Manager-YardRemote ManagerUITests/Pods-YardRemote Manager-YardRemote ManagerUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YardRemote Manager-YardRemote ManagerUITests/Pods-YardRemote Manager-YardRemote ManagerUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YardRemote Manager-YardRemote ManagerUITests/Pods-YardRemote Manager-YardRemote ManagerUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -530,25 +578,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA1BE7B72590115F00A57433 /* Buttons.swift in Sources */,
-				AAE0D19525947338002A505B /* Job.swift in Sources */,
-				AAE0D19425947338002A505B /* Action.swift in Sources */,
+				AA2BA85D25A28DC5004D98CC /* InformationWidget.swift in Sources */,
+				AA2BA84B25A28DC5004D98CC /* Event.swift in Sources */,
+				AA2BA84F25A28DC5004D98CC /* Action.swift in Sources */,
+				AA2BA84E25A28DC5004D98CC /* Bill.swift in Sources */,
 				AA6ADF922589F66D007F9FB6 /* HomePage.swift in Sources */,
-				AA53602B258A594200D2C5A3 /* SignInGoogle.swift in Sources */,
-				AAE0D19325947338002A505B /* Bill.swift in Sources */,
-				AA6ADF7B2589E827007F9FB6 /* MapView.swift in Sources */,
+				AA2BA85025A28DC5004D98CC /* Job.swift in Sources */,
+				AA2BA85125A28DC5004D98CC /* EmployeeViewer.swift in Sources */,
+				AA2BA85B25A28DC5004D98CC /* NewJobWidget.swift in Sources */,
+				AA2BA85E25A28DC5004D98CC /* ServiceLogos.swift in Sources */,
 				AA1BE793258EB0FB00A57433 /* managementWidget.swift in Sources */,
-				AA1BE7A2258EB20300A57433 /* NewJobWidget.swift in Sources */,
-				AA1BE798258EB14800A57433 /* manageEmployees.swift in Sources */,
-				AAE0D18625947327002A505B /* JobsViewer.swift in Sources */,
-				AA759670259016C400C42852 /* employeeList.swift in Sources */,
-				AAE0D18725947327002A505B /* EmployeeViewer.swift in Sources */,
-				AA1BE7AA258EB30C00A57433 /* PastJobsWidget.swift in Sources */,
-				AAE0D19225947338002A505B /* Employee.swift in Sources */,
+				AA2BA84D25A28DC5004D98CC /* Employee.swift in Sources */,
+				AA2BA84C25A28DC5004D98CC /* Message.swift in Sources */,
+				AA2BA85A25A28DC5004D98CC /* MapView.swift in Sources */,
+				AA2BA85225A28DC5004D98CC /* EmployeePicker.swift in Sources */,
+				AA2BA85925A28DC5004D98CC /* locationPicker.swift in Sources */,
 				AA6ADF262589E4AA007F9FB6 /* YardRemote_ManagerApp.swift in Sources */,
-				AAE0D19125947338002A505B /* Location.swift in Sources */,
-				AA1BE79D258EB1CE00A57433 /* addEmployee.swift in Sources */,
-				AA1BE7AF258EC0CE00A57433 /* editEmployee.swift in Sources */,
+				AA2BA85325A28DC5004D98CC /* manageEmployees.swift in Sources */,
+				AA2BA85825A28DC5004D98CC /* LocationMasterList.swift in Sources */,
+				AA2BA85425A28DC5004D98CC /* SignInGoogle.swift in Sources */,
+				AA2BA85525A28DC5004D98CC /* EmployeeCreator.swift in Sources */,
+				AA2BA85725A28DC5004D98CC /* Buttons.swift in Sources */,
+				AA2BA85625A28DC5004D98CC /* InfoWidget.swift in Sources */,
+				AA2BA85C25A28DC5004D98CC /* PastJobsWidget.swift in Sources */,
+				AA2BA84A25A28DC5004D98CC /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

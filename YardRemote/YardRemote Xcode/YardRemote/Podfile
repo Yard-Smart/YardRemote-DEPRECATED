@@ -20,6 +20,7 @@ pod 'Firebase/DynamicLinks'
 pod 'Firebase/Performance'
 pod 'Firebase/Database'
 pod 'Firebase/RemoteConfig'
+pod 'FirebaseFirestoreSwift'
 
   target 'YardRemoteTests' do
     inherit! :search_paths
