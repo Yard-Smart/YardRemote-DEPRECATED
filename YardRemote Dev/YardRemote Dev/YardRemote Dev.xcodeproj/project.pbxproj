@@ -13,23 +13,27 @@
 		AA0E30FB25943AF3001C42CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0E30FA25943AF3001C42CB /* Assets.xcassets */; };
 		AA0E30FE25943AF3001C42CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0E30FD25943AF3001C42CB /* Preview Assets.xcassets */; };
 		AA0E310125943AF3001C42CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA0E30FF25943AF3001C42CB /* LaunchScreen.storyboard */; };
-		AA0E312225943D22001C42CB /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E311D25943D22001C42CB /* Location.swift */; };
-		AA0E312325943D22001C42CB /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E311E25943D22001C42CB /* Employee.swift */; };
-		AA0E312425943D22001C42CB /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E311F25943D22001C42CB /* Bill.swift */; };
-		AA0E312525943D22001C42CB /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E312025943D22001C42CB /* Action.swift */; };
-		AA0E312625943D22001C42CB /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E312125943D22001C42CB /* Job.swift */; };
-		AA0E312B25943D29001C42CB /* EmployeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E312925943D29001C42CB /* EmployeeViewModel.swift */; };
-		AA0E312C25943D29001C42CB /* JobsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E312A25943D29001C42CB /* JobsViewModel.swift */; };
-		AA0E313725943D31001C42CB /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E312F25943D31001C42CB /* Buttons.swift */; };
-		AA0E313825943D31001C42CB /* locationPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E313025943D31001C42CB /* locationPicker.swift */; };
-		AA0E313A25943D31001C42CB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E313225943D31001C42CB /* MapView.swift */; };
-		AA0E313B25943D31001C42CB /* JobsViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E313325943D31001C42CB /* JobsViewer.swift */; };
-		AA0E313C25943D31001C42CB /* NewJobWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E313425943D31001C42CB /* NewJobWidget.swift */; };
-		AA0E313D25943D31001C42CB /* PastJobsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E313525943D31001C42CB /* PastJobsWidget.swift */; };
-		AA0E313E25943D31001C42CB /* EmployeeEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0E313625943D31001C42CB /* EmployeeEditor.swift */; };
-		AA8061A2259452A00055A0BE /* EmployeeCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8061A1259452A00055A0BE /* EmployeeCreator.swift */; };
+		AA2BA7CE25A27359004D98CC /* ServiceLogos.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2BA7CD25A27359004D98CC /* ServiceLogos.swift */; };
 		AA8061A7259456670055A0BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA8061A6259456670055A0BE /* GoogleService-Info.plist */; };
-		AAE0D19A2594777E002A505B /* EmployeePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE0D1992594777E002A505B /* EmployeePicker.swift */; };
+		AAD4C55E25A1780000EF2ADA /* LocationMasterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4C55D25A1780000EF2ADA /* LocationMasterList.swift */; };
+		AAD4C58025A17A7E00EF2ADA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4C56525A17A7D00EF2ADA /* Location.swift */; };
+		AAD4C58125A17A7E00EF2ADA /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4C56625A17A7D00EF2ADA /* Event.swift */; };
+		AAD4C58225A17A7E00EF2ADA /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4C56725A17A7D00EF2ADA /* Message.swift */; };
+		AAD4C58325A17A7E00EF2ADA /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4C56825A17A7D00EF2ADA /* Employee.swift */; };
+		AAD4C58425A17A7E00EF2ADA /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4C56925A17A7D00EF2ADA /* Bill.swift */; };
+		AAD4C58525A17A7E00EF2ADA /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4C56A25A17A7D00EF2ADA /* Action.swift */; };
+		AAD4C58625A17A7E00EF2ADA /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4C56B25A17A7D00EF2ADA /* Job.swift */; };
+		AAD4C58925A17A7E00EF2ADA /* EmployeePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4C57025A17A7D00EF2ADA /* EmployeePicker.swift */; };
+		AAD4C58A25A17A7E00EF2ADA /* manageEmployees.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4C57125A17A7D00EF2ADA /* manageEmployees.swift */; };
+		AAD4C58B25A17A7E00EF2ADA /* SignInGoogle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4C57225A17A7D00EF2ADA /* SignInGoogle.swift */; };
+		AAD4C58C25A17A7E00EF2ADA /* EmployeeCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4C57325A17A7D00EF2ADA /* EmployeeCreator.swift */; };
+		AAD4C58D25A17A7E00EF2ADA /* InfoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4C57525A17A7D00EF2ADA /* InfoWidget.swift */; };
+		AAD4C58E25A17A7E00EF2ADA /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4C57625A17A7D00EF2ADA /* Buttons.swift */; };
+		AAD4C59025A17A7E00EF2ADA /* locationPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4C57825A17A7D00EF2ADA /* locationPicker.swift */; };
+		AAD4C59225A17A7E00EF2ADA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4C57A25A17A7D00EF2ADA /* MapView.swift */; };
+		AAD4C59425A17A7E00EF2ADA /* NewJobWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4C57C25A17A7D00EF2ADA /* NewJobWidget.swift */; };
+		AAD4C59525A17A7E00EF2ADA /* PastJobsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4C57D25A17A7D00EF2ADA /* PastJobsWidget.swift */; };
+		AAD4C59625A17A7E00EF2ADA /* InformationWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4C57E25A17A7D00EF2ADA /* InformationWidget.swift */; };
 		BDF3B64EE9708861CA222623 /* Pods_YardRemote_Dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FC05E3CBA98DCA80383AB19 /* Pods_YardRemote_Dev.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,23 +49,27 @@
 		AA0E30FD25943AF3001C42CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AA0E310025943AF3001C42CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA0E310225943AF3001C42CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA0E311D25943D22001C42CB /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		AA0E311E25943D22001C42CB /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
-		AA0E311F25943D22001C42CB /* Bill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
-		AA0E312025943D22001C42CB /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
-		AA0E312125943D22001C42CB /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
-		AA0E312925943D29001C42CB /* EmployeeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeViewModel.swift; sourceTree = "<group>"; };
-		AA0E312A25943D29001C42CB /* JobsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobsViewModel.swift; sourceTree = "<group>"; };
-		AA0E312F25943D31001C42CB /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
-		AA0E313025943D31001C42CB /* locationPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locationPicker.swift; sourceTree = "<group>"; };
-		AA0E313225943D31001C42CB /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		AA0E313325943D31001C42CB /* JobsViewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobsViewer.swift; sourceTree = "<group>"; };
-		AA0E313425943D31001C42CB /* NewJobWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewJobWidget.swift; sourceTree = "<group>"; };
-		AA0E313525943D31001C42CB /* PastJobsWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastJobsWidget.swift; sourceTree = "<group>"; };
-		AA0E313625943D31001C42CB /* EmployeeEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeEditor.swift; sourceTree = "<group>"; };
-		AA8061A1259452A00055A0BE /* EmployeeCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCreator.swift; sourceTree = "<group>"; };
+		AA2BA7CD25A27359004D98CC /* ServiceLogos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ServiceLogos.swift; path = ../Widgets/ServiceLogos.swift; sourceTree = "<group>"; };
 		AA8061A6259456670055A0BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../YardSmart Employee/YardSmart Employee/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		AAE0D1992594777E002A505B /* EmployeePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeePicker.swift; sourceTree = "<group>"; };
+		AAD4C55D25A1780000EF2ADA /* LocationMasterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocationMasterList.swift; path = ../../../../Common/Widgets/LocationMasterList.swift; sourceTree = "<group>"; };
+		AAD4C56525A17A7D00EF2ADA /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		AAD4C56625A17A7D00EF2ADA /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		AAD4C56725A17A7D00EF2ADA /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		AAD4C56825A17A7D00EF2ADA /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		AAD4C56925A17A7D00EF2ADA /* Bill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
+		AAD4C56A25A17A7D00EF2ADA /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		AAD4C56B25A17A7D00EF2ADA /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		AAD4C57025A17A7D00EF2ADA /* EmployeePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeePicker.swift; sourceTree = "<group>"; };
+		AAD4C57125A17A7D00EF2ADA /* manageEmployees.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = manageEmployees.swift; sourceTree = "<group>"; };
+		AAD4C57225A17A7D00EF2ADA /* SignInGoogle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInGoogle.swift; sourceTree = "<group>"; };
+		AAD4C57325A17A7D00EF2ADA /* EmployeeCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeCreator.swift; sourceTree = "<group>"; };
+		AAD4C57525A17A7D00EF2ADA /* InfoWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoWidget.swift; sourceTree = "<group>"; };
+		AAD4C57625A17A7D00EF2ADA /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		AAD4C57825A17A7D00EF2ADA /* locationPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locationPicker.swift; sourceTree = "<group>"; };
+		AAD4C57A25A17A7D00EF2ADA /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		AAD4C57C25A17A7D00EF2ADA /* NewJobWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewJobWidget.swift; sourceTree = "<group>"; };
+		AAD4C57D25A17A7D00EF2ADA /* PastJobsWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastJobsWidget.swift; sourceTree = "<group>"; };
+		AAD4C57E25A17A7D00EF2ADA /* InformationWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationWidget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,12 +122,9 @@
 		AA0E30F325943AF3001C42CB /* YardRemote Dev */ = {
 			isa = PBXGroup;
 			children = (
-				AA8061A92594621C0055A0BE /* ModelRepresentations */,
+				AAD4C56225A17A7D00EF2ADA /* Common */,
+				AAD4C55C25A177EB00EF2ADA /* Data */,
 				AA8061A6259456670055A0BE /* GoogleService-Info.plist */,
-				AA8061A4259452AC0055A0BE /* Pages */,
-				AA0E312825943D29001C42CB /* ViewModels */,
-				AA0E312E25943D31001C42CB /* Widgets */,
-				AA0E311C25943D22001C42CB /* Models */,
 				AA0E30F425943AF3001C42CB /* AppDelegate.swift */,
 				AA0E30F625943AF3001C42CB /* SceneDelegate.swift */,
 				AA0E30F825943AF3001C42CB /* ContentView.swift */,
@@ -139,56 +144,79 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		AA0E311C25943D22001C42CB /* Models */ = {
+		AA2BA7CC25A27334004D98CC /* Logos */ = {
 			isa = PBXGroup;
 			children = (
-				AA0E311D25943D22001C42CB /* Location.swift */,
-				AA0E311E25943D22001C42CB /* Employee.swift */,
-				AA0E311F25943D22001C42CB /* Bill.swift */,
-				AA0E312025943D22001C42CB /* Action.swift */,
-				AA0E312125943D22001C42CB /* Job.swift */,
+				AA2BA7CD25A27359004D98CC /* ServiceLogos.swift */,
 			);
-			path = Models;
+			path = Logos;
 			sourceTree = "<group>";
 		};
-		AA0E312825943D29001C42CB /* ViewModels */ = {
+		AAD4C55C25A177EB00EF2ADA /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				AA0E312925943D29001C42CB /* EmployeeViewModel.swift */,
-				AA0E312A25943D29001C42CB /* JobsViewModel.swift */,
+				AAD4C55D25A1780000EF2ADA /* LocationMasterList.swift */,
 			);
-			name = ViewModels;
-			path = "YardRemote Dev/ViewModels";
-			sourceTree = SOURCE_ROOT;
-		};
-		AA0E312E25943D31001C42CB /* Widgets */ = {
-			isa = PBXGroup;
-			children = (
-				AA0E312F25943D31001C42CB /* Buttons.swift */,
-				AA0E313025943D31001C42CB /* locationPicker.swift */,
-				AA0E313225943D31001C42CB /* MapView.swift */,
-				AA0E313425943D31001C42CB /* NewJobWidget.swift */,
-				AA0E313525943D31001C42CB /* PastJobsWidget.swift */,
-			);
-			path = Widgets;
+			path = Data;
 			sourceTree = "<group>";
 		};
-		AA8061A4259452AC0055A0BE /* Pages */ = {
+		AAD4C56225A17A7D00EF2ADA /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				AA8061A1259452A00055A0BE /* EmployeeCreator.swift */,
-				AAE0D1992594777E002A505B /* EmployeePicker.swift */,
+				AA2BA7CC25A27334004D98CC /* Logos */,
+				AAD4C56325A17A7D00EF2ADA /* ViewModels */,
+				AAD4C56425A17A7D00EF2ADA /* CommonModels */,
+				AAD4C56F25A17A7D00EF2ADA /* Pages */,
+				AAD4C57425A17A7D00EF2ADA /* Widgets */,
+			);
+			name = Common;
+			path = ../../../Common;
+			sourceTree = "<group>";
+		};
+		AAD4C56325A17A7D00EF2ADA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AAD4C56425A17A7D00EF2ADA /* CommonModels */ = {
+			isa = PBXGroup;
+			children = (
+				AAD4C56525A17A7D00EF2ADA /* Location.swift */,
+				AAD4C56625A17A7D00EF2ADA /* Event.swift */,
+				AAD4C56725A17A7D00EF2ADA /* Message.swift */,
+				AAD4C56825A17A7D00EF2ADA /* Employee.swift */,
+				AAD4C56925A17A7D00EF2ADA /* Bill.swift */,
+				AAD4C56A25A17A7D00EF2ADA /* Action.swift */,
+				AAD4C56B25A17A7D00EF2ADA /* Job.swift */,
+			);
+			path = CommonModels;
+			sourceTree = "<group>";
+		};
+		AAD4C56F25A17A7D00EF2ADA /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				AAD4C57025A17A7D00EF2ADA /* EmployeePicker.swift */,
+				AAD4C57125A17A7D00EF2ADA /* manageEmployees.swift */,
+				AAD4C57225A17A7D00EF2ADA /* SignInGoogle.swift */,
+				AAD4C57325A17A7D00EF2ADA /* EmployeeCreator.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
 		};
-		AA8061A92594621C0055A0BE /* ModelRepresentations */ = {
+		AAD4C57425A17A7D00EF2ADA /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
-				AA0E313625943D31001C42CB /* EmployeeEditor.swift */,
-				AA0E313325943D31001C42CB /* JobsViewer.swift */,
+				AAD4C57525A17A7D00EF2ADA /* InfoWidget.swift */,
+				AAD4C57625A17A7D00EF2ADA /* Buttons.swift */,
+				AAD4C57825A17A7D00EF2ADA /* locationPicker.swift */,
+				AAD4C57A25A17A7D00EF2ADA /* MapView.swift */,
+				AAD4C57C25A17A7D00EF2ADA /* NewJobWidget.swift */,
+				AAD4C57D25A17A7D00EF2ADA /* PastJobsWidget.swift */,
+				AAD4C57E25A17A7D00EF2ADA /* InformationWidget.swift */,
 			);
-			path = ModelRepresentations;
+			path = Widgets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,25 +334,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA0E312C25943D29001C42CB /* JobsViewModel.swift in Sources */,
-				AA0E313D25943D31001C42CB /* PastJobsWidget.swift in Sources */,
+				AAD4C58E25A17A7E00EF2ADA /* Buttons.swift in Sources */,
+				AAD4C58525A17A7E00EF2ADA /* Action.swift in Sources */,
+				AA2BA7CE25A27359004D98CC /* ServiceLogos.swift in Sources */,
+				AAD4C58325A17A7E00EF2ADA /* Employee.swift in Sources */,
+				AAD4C59225A17A7E00EF2ADA /* MapView.swift in Sources */,
 				AA0E30F525943AF3001C42CB /* AppDelegate.swift in Sources */,
-				AA0E313825943D31001C42CB /* locationPicker.swift in Sources */,
 				AA0E30F725943AF3001C42CB /* SceneDelegate.swift in Sources */,
-				AA0E313725943D31001C42CB /* Buttons.swift in Sources */,
-				AA0E312225943D22001C42CB /* Location.swift in Sources */,
-				AA8061A2259452A00055A0BE /* EmployeeCreator.swift in Sources */,
-				AA0E313C25943D31001C42CB /* NewJobWidget.swift in Sources */,
-				AAE0D19A2594777E002A505B /* EmployeePicker.swift in Sources */,
-				AA0E312325943D22001C42CB /* Employee.swift in Sources */,
-				AA0E313A25943D31001C42CB /* MapView.swift in Sources */,
-				AA0E312B25943D29001C42CB /* EmployeeViewModel.swift in Sources */,
-				AA0E313E25943D31001C42CB /* EmployeeEditor.swift in Sources */,
-				AA0E312525943D22001C42CB /* Action.swift in Sources */,
-				AA0E312425943D22001C42CB /* Bill.swift in Sources */,
-				AA0E313B25943D31001C42CB /* JobsViewer.swift in Sources */,
+				AAD4C59625A17A7E00EF2ADA /* InformationWidget.swift in Sources */,
+				AAD4C59425A17A7E00EF2ADA /* NewJobWidget.swift in Sources */,
+				AAD4C58925A17A7E00EF2ADA /* EmployeePicker.swift in Sources */,
+				AAD4C59025A17A7E00EF2ADA /* locationPicker.swift in Sources */,
+				AAD4C58425A17A7E00EF2ADA /* Bill.swift in Sources */,
+				AAD4C58B25A17A7E00EF2ADA /* SignInGoogle.swift in Sources */,
+				AAD4C58125A17A7E00EF2ADA /* Event.swift in Sources */,
+				AAD4C58C25A17A7E00EF2ADA /* EmployeeCreator.swift in Sources */,
+				AAD4C55E25A1780000EF2ADA /* LocationMasterList.swift in Sources */,
+				AAD4C58025A17A7E00EF2ADA /* Location.swift in Sources */,
+				AAD4C58A25A17A7E00EF2ADA /* manageEmployees.swift in Sources */,
+				AAD4C58D25A17A7E00EF2ADA /* InfoWidget.swift in Sources */,
+				AAD4C58225A17A7E00EF2ADA /* Message.swift in Sources */,
+				AAD4C58625A17A7E00EF2ADA /* Job.swift in Sources */,
+				AAD4C59525A17A7E00EF2ADA /* PastJobsWidget.swift in Sources */,
 				AA0E30F925943AF3001C42CB /* ContentView.swift in Sources */,
-				AA0E312625943D22001C42CB /* Job.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

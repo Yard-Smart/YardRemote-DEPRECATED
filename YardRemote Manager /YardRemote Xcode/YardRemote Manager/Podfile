@@ -5,21 +5,15 @@ target 'YardRemote Manager' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-pod 'Firebase/Core'
-pod 'Firebase/Analytics'
-pod 'Firebase/AppDistribution'
-pod 'Firebase/Auth'
+  # Pods for YardRemote Manager
 pod 'Firebase/Firestore'
-pod 'Firebase/Functions'
+pod 'Firebase/Auth'
+pod 'FirebaseFirestoreSwift'
 pod 'Firebase/Storage'
 pod 'Firebase/Crashlytics'
-pod 'Firebase/DynamicLinks'
-pod 'Firebase/Performance'
-pod 'Firebase/Database'
-pod 'Firebase/RemoteConfig'
-pod 'GoogleSignIn'
+pod 'FirebaseUI'
 
-  # Pods for YardRemote Manager
+
 
   target 'YardRemote ManagerTests' do
     inherit! :search_paths
@@ -31,3 +25,4 @@ pod 'GoogleSignIn'
   end
 
 end
+

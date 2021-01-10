@@ -15,15 +15,23 @@ var ScreenH:CGFloat = UIScreen.main.bounds.height
 var ScreenW:CGFloat = UIScreen.main.bounds.width
 var username: String = "Felg"
 var appname: String = "YardRemote Dev"
+let appID: String = UIDevice.current.identifierForVendor?.uuidString ?? "Failed to get UUID \(username) @ \(appname)"
+
+var testModeEnabled = true
 
 struct ContentView: View {
     var body: some View {
         NavigationView{
             ScrollView{
-                NavigationLink(destination: EmployeesList()){
-                    smallButton(text: "See Employees", color: Color.red)
+                VStack{
+                    NavigationLink(destination: EmployeesList()){
+                        smallButton(text: "See Employees", color: Color.red)
+                    }
+                    NavigationLink(destination: LocationsListJSON()){
+                        smallButton(text: "See JSON Locations", color: Color.red)
+                    }
+                    EmployeeCreator()
                 }
-                EmployeeCreator()
             }
         }
     }

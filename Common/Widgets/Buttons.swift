@@ -33,11 +33,11 @@ struct smallButton : View {
     var color: Color
     
     var body: some View {
-        Rectangle()
-        .fill(color)
-        .frame(minWidth: 180, idealWidth: ScreenW, maxWidth: ScreenW, minHeight: 50, idealHeight: 50, maxHeight: 100, alignment: .center)
-        .cornerRadius(10)
-        .overlay(
+        ZStack{
+            Rectangle()
+            .fill(color)
+            .frame(minWidth: 180, idealWidth: ScreenW, maxWidth: ScreenW, minHeight: 50, idealHeight: 50, maxHeight: 100, alignment: .center)
+            .cornerRadius(10)
             VStack{
                 HStack {
                     Text(text)
@@ -45,7 +45,7 @@ struct smallButton : View {
                         .font(.system(size: 20, weight: .black, design: .default))
                 }
             }.padding(5)
-        )
+        }
     }
 }
 

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Bill: Identifiable, Codable {
+struct Bill: Identifiable {
     let id: String
     let time: String
     let date: String

@@ -34,7 +34,7 @@ struct EmployeeOverviewPicker: View {
         ZStack{
             let (employee, seleted) = employeeT
             RoundedRectangle(cornerRadius: 10, style: .circular)
-                .fill(seleted ? Color.red :  Color.green)
+                .fill(seleted ? Color.green : Color.red)
             VStack{
                 ZStack(alignment: .leading){
                     Text(employee.name).font(.largeTitle)
@@ -107,32 +107,33 @@ struct EmployeesPicker: View {
     }
 }
 
-func saveSelectedIDs(employeesT : [(Employee, Bool)]){
-    var returnvalue: [String] = []
-    for employee in employeesT {
-        if employee.1{
-            returnvalue.append(employee.0.id ?? "no id")
-        }
-    }
-    selectedIDs = returnvalue
-    return
-}
+
 
 struct EmployeesListPicker: View {
     @Binding var selectedIDs: [String]
     @ObservedObject public var employeesSO : EmployeeViewModel
-    
+    @State var employeesT: [(Employee, Bool)] = []
     
     func getEmployeesT(employees : [Employee]){
         var returnvalue: [(Employee, Bool)] = []
         for employee in employees {
-            returnvalue.append((employee,false))
+            let boolR = selectedIDs.contains(employee.id ?? "")
+            returnvalue.append((employee,boolR))
         }
         employeesT = returnvalue
         return
     }
     
-    
+    func saveSelectedIDs(employeesT : [(Employee, Bool)]){
+        var returnvalue: [String] = []
+        for employee in employeesT {
+            if employee.1{
+                returnvalue.append(employee.0.id ?? "no id")
+            }
+        }
+        self.selectedIDs = returnvalue
+        return
+    }
     
     var body: some View{
             ScrollView{
@@ -163,6 +164,9 @@ struct EmployeesListPicker: View {
                 .onDisappear(){
                     saveSelectedIDs(employeesT: employeesT)
                 }
+                .onChange(of: employeesT.description, perform:  {_ in
+                    saveSelectedIDs(employeesT: employeesT)
+                })
             }
         
     }

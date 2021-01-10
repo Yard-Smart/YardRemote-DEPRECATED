@@ -337,7 +337,7 @@ struct EmployeesList: View {
                         })
                     }
                 }
-        }
+            }
     }
 }
 

@@ -6,23 +6,27 @@
 //
 
 import Foundation
-import SwiftUI
-import FirebaseFirestore
-import FirebaseFirestoreSwift
 
-struct Employee: Codable, Identifiable{
-    @DocumentID var id: String?
-    var name: String
-    var creatorID: String
-    var address: String
-    var imageID: String
-    var email: String
-    var phoneNumber: String
-    var balance: String
-    var hours: Int
-    var isActive: Bool
-    var payHistory: [Bill]
-    var messages: [Message]
+struct Employee: Identifiable, Hashable, Equatable{
+    let id: String
+    let name: String
+    let creatorID: String
+    let address: String
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+    static func ==(lhs: Employee, rhs: Employee) -> Bool {
+        return lhs.name == rhs.name && lhs.id == rhs.id
+    }
+    var dictionary: [String: Any] {
+      return [
+        "id": id,
+        "name": name,
+        "creatorID": creatorID,
+        "address": address,
+      ]
+    }
+    
 }
 
-let tstEmployee = Employee(id: "felg", name: "Felipe Galindo", creatorID: "Felg", address: "315 S Basswood Ave", imageID: "felg", email: "felipht@hotmail.com", phoneNumber: "628-222-4642",balance: "0", hours: 0, isActive: true, payHistory: [], messages: [Message(id: "tstmsg", timeSent: "0.0", senderID: "Felg", recipientID: "", title: "", message: "cool dude ")])
+let tstEmployee = Employee(id: "felg", name: "Felipe Galindo", creatorID: "Felg", address: "315 S Basswood Ave")

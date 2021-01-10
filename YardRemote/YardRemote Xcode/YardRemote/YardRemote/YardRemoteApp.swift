@@ -35,17 +35,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 //    }
 }
 
-struct ImagePicker: UIViewControllerRepresentable {
-    func makeUIViewController(context: Context) -> UIImagePickerController {
-        <#code#>
-    }
-    
-    func updateUIViewController(_ uiViewController: UIImagePickerController, context: Context) {
-        <#code#>
-    }
-    
-    typealias UIViewControllerType = UIImagePickerController
-}
+
 
 
 

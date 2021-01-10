@@ -16,12 +16,14 @@ var employeeID = "Felipe"
 struct startStopButton : View {
     var isStarted: Bool
     var isReady: Bool
+    var testModeEnabled: Bool
     var body: some View {
-        Rectangle()
-            .fill(isReady ? (isStarted ? Color.red :  Color.green) : Color.blue)
-        .frame(minWidth: 180, idealWidth: ScreenW, maxWidth: ScreenW, minHeight: 100, idealHeight: 100, maxHeight: 200, alignment: .center)
-        .cornerRadius(10)
-        .overlay(
+        ZStack{
+            Rectangle()
+                .fill(isReady ? (isStarted ? Color.red :  Color.green) : Color.blue)
+            .frame(minWidth: 180, idealWidth: ScreenW, maxWidth: ScreenW, minHeight: 100, idealHeight: 100, maxHeight: 200, alignment: .center)
+            .cornerRadius(10)
+            
             VStack{
                 HStack {
                     Text(isReady ? (isStarted ? "END" : "START"): "READY")
@@ -29,7 +31,33 @@ struct startStopButton : View {
                         .font(.system(size: 80, weight: .black, design: .default))
                 }
             }.padding(5)
-        )
+            
+            if testModeEnabled {
+                VStack{
+                    Spacer()
+                    HStack{
+                        Spacer()
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 15)
+                                .fill(Color(UIColor.systemFill))
+                                .frame(minWidth: 180/4, idealWidth: ScreenW/4, maxWidth: ScreenW/4, minHeight: 100/4, idealHeight: 100/4, maxHeight: 200/4, alignment: .center)
+                            Text("Test Mode")
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+struct confirmationWidget : View {
+    @Binding var job : Job
+    @Binding var didTryToSubmitWithoutEmployees : Bool
+    var body: some View {
+        Text("You have selected \(job.employeeIDs.count) employees")
+        if didTryToSubmitWithoutEmployees{
+            Text("You must select at least 1 employee")
+        }
     }
 }
 
@@ -82,9 +110,6 @@ struct currentJobTimer: View {
                         Spacer()
                         
                         VStack{
-                            //Text(getFormatedDifference(date: Date(timeIntervalSince1970: TimeInterval(job.startTime) ?? Date().timeIntervalSince1970)))
-//                            Text(getFormatedDifference(startTime: job.startTime))
-//                            Text(findDateDiff(startTimeStr: job.startTime, endTimeStr: job.endTime))
                             Text(format(duration: (TimeInterval(job.endTime)!-TimeInterval(job.startTime)!)))
                             Text("Time Spent").foregroundColor(.gray)
                         }
@@ -114,80 +139,98 @@ func saveJob(job: Job){
     return
 }
 
+func getNewJob() -> Job{
+    return Job(id: UUID().uuidString, startTime: String(Date().timeIntervalSince1970), endTime: String(Date().timeIntervalSince1970), locationID: "", isDone: false, isTest: true, hasStarted: false, employeeIDs: [], messages: [Message(id: UUID().uuidString, timeSent: String(Date().timeIntervalSince1970), senderID: "\(username)@\(appname)", recipientID: "server", title: "", message: "")], events: [])
+}
+
+
 struct NewJobWidget: View {
-    @State private var mapHeight: CGFloat = 400
-    @State var job: Job = Job(id: UUID().uuidString, startTime: String(Date().timeIntervalSince1970), endTime: String(Date().timeIntervalSince1970), locationID: "-", isDone: false, hasStarted: false, employeeIDs: [employeeID], messages: [Message(id: UUID().uuidString, timeSent: String(Date().timeIntervalSince1970), senderID: "\(username)@\(appname)", recipientID: "server", title: "", message: "")])
+    @State var job: Job = getNewJob()
     @ObservedObject public var employeesSO : EmployeeViewModel
+    @State var didTryToSubmitWithoutEmployees = false
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
-
+    func toogleJobState(){
+            }
 
     var body: some View {
-        VStack{
-            currentJobTimer(job: job)
-            
-            ZStack{
-                RoundedRectangle(cornerRadius: 5)
-                    .fill(Color(UIColor.systemFill))
-                
-                VStack{
-                    Text("Enter Notes")
-                    TextEditor(text: $job.messages[0].message)
-                        .frame(minWidth: ScreenW/2, idealWidth: ScreenW, maxWidth: ScreenW, minHeight: ScreenH/5, idealHeight: ScreenH/5, maxHeight: ScreenH/3, alignment: .center)
-                }
-            }
-            
-            Rectangle()
-            .fill(Color(UIColor.systemFill))
-            .frame(minWidth: 180, idealWidth: ScreenW, maxWidth: ScreenW, minHeight: 10, idealHeight: 10, maxHeight: 40, alignment: .center)
-            .cornerRadius(30)
-            .overlay(
-                HStack{
-                    TextField("Type Address", text: $job.locationID)
-                        .font(.system(size: 40, weight: .black, design: .default))
-                        .padding(15)
-                }
-                
-            )
-            NavigationLink(destination: EmployeesListPicker(selectedIDs: $job.employeeIDs, employeesSO: employeesSO)){
-                smallButton(text: "Select Employees", color: Color.blue)
-            }
-            Text("You have selected \(job.employeeIDs.count) employees")
-            
-            
-
-                
-            
-            startStopButton(isStarted: inJob, isReady: isReady)
-                .onTapGesture {
-                        if !isReady { //If you were not ready, then ready up
-                            isReady = true
-                    }else{
-                        if inJob {//If in job then save the current Job, push to the cloud, then reset
-                            isReady = false
-                            inJob = false
-                            job.endTime = String(Date().timeIntervalSince1970)
-                            saveJob(job: job)
-                            //reset Job
-                            job = Job(id: UUID().uuidString, startTime: String(Date().timeIntervalSince1970), endTime: String(Date().timeIntervalSince1970), locationID: "-", isDone: false, hasStarted: false, employeeIDs: [], messages: [Message(id: UUID().uuidString, timeSent: String(Date().timeIntervalSince1970), senderID: "app", recipientID: "server", title: "", message: "")])
-
-                            
-                        }else{   //If you were ready and were not in a job now then start a job
-                            inJob = true
-                            job.startTime = String(Date().timeIntervalSince1970)
-                            job.hasStarted = true
-                        }
+        ZStack{
+            RoundedRectangle(cornerRadius: 10, style: .circular)
+                .fill(Color(UIColor.systemFill))
+//            
+            VStack{
+                NavigationLink(destination: EmployeesListPicker(selectedIDs: $job.employeeIDs, employeesSO: employeesSO)) {
+                    smallButton(text: "Pick Employees", color: Color.blue)
+                    if !job.employeeIDs.isEmpty{
+//                        List{
+//                            ForEach(job.employeeIDs){ employeeID in
+//                                Text("employeeID")
+//                            }
+//                        }
+                        Text("You have selected \(job.employeeIDs.count) employees")
                     }
                 }
-        }.onReceive(timer, perform: { _ in
-            job.endTime = String(Date().timeIntervalSince1970)
-        })
-        .onAppear(perform: {
-            UITextView.appearance().backgroundColor = .clear
-        })
-        
-        
-        
+                
+                
+                currentJobTimer(job: job)
+                
+                ZStack{
+                    RoundedRectangle(cornerRadius: 10, style: .circular)
+                        .fill(Color(UIColor.systemFill))
+                    
+                    VStack{
+                        HStack{
+                            Text("Job Notes").font(.title)
+                            if job.messages[0].message==""{
+                                Text("Please add any relevant notes").foregroundColor(Color.red)
+                            }else{
+                                Spacer()
+                            }
+                        }
+                        
+                        TextEditor(text: $job.messages[0].message)
+                            .frame(minWidth: ScreenW/2, idealWidth: ScreenW, maxWidth: ScreenW, minHeight: ScreenH/5, idealHeight: ScreenH/5, maxHeight: ScreenH/3, alignment: .center)
+                    }
+                    .padding(5)
+                    .cornerRadius(5)
+
+                }
+                
+                locationPicker(locationID: $job.locationID)
+
+                    
+                
+                startStopButton(isStarted: inJob, isReady: isReady, testModeEnabled: testModeEnabled)
+
+                    .onTapGesture {
+                        if !job.employeeIDs.isEmpty {
+                            didTryToSubmitWithoutEmployees = true
+                        }
+                        
+                        if !isReady { //If you were not ready, then ready up
+                            isReady = true
+                        }else{
+                            if inJob {//If in job then save the current Job, push to the cloud, then reset
+                                isReady = false
+                                inJob = false
+                                job.endTime = String(Date().timeIntervalSince1970)
+                                saveJob(job: job)
+                                //reset Job
+                                job = getNewJob()
+
+                            
+                            }else{   //If you were ready and were not in a job now then start a job
+                                inJob = true
+                                job.startTime = String(Date().timeIntervalSince1970)
+                                job.hasStarted = true
+                            }
+                        }
+                    }
+            }.onReceive(timer, perform: { _ in
+                job.endTime = String(Date().timeIntervalSince1970)
+            })
+            .padding(10)
+        }
     }
 }
 

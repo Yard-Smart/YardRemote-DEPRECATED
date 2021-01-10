@@ -6,15 +6,12 @@
 //
 
 import Foundation
-import SwiftUI
 import FirebaseFirestore
-import FirebaseFirestoreSwift
 
 
 
-
-struct Job: Codable, Identifiable {
-    @DocumentID var id: String?
+struct Job: Identifiable {
+    var id: String
     var startTime: String
     var endTime: String
     var locationID: String
@@ -23,9 +20,16 @@ struct Job: Codable, Identifiable {
     var employeeIDs: [String]
     var messages: [Message]
     
+    enum CodingKeys {
+        case startTime
+        case endTime
+        case locationID
+//        case employeeIDs
+//        case messages
+    }
 }
 
-struct Message: Codable, Identifiable {
+struct Message: Identifiable {
     var id: String
     var timeSent: String
     var senderID: String

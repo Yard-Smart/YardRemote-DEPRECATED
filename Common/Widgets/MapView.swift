@@ -63,18 +63,19 @@ import CoreLocation
 //  }
 //}
 
-
 var locationManager = CLLocationManager()
+
+func setupManager() {
+  locationManager.desiredAccuracy = kCLLocationAccuracyBest
+  locationManager.requestWhenInUseAuthorization()
+}
 
 struct MapView: UIViewRepresentable {
     
+    
 
 
-  func setupManager() {
-    locationManager.desiredAccuracy = kCLLocationAccuracyBest
-    locationManager.requestWhenInUseAuthorization()
-    locationManager.requestAlwaysAuthorization()
-  }
+  
   
   func makeUIView(context: Context) -> MKMapView {
     setupManager()
@@ -90,7 +91,6 @@ struct MapView: UIViewRepresentable {
 
 
 struct locationInfoWidget: View {
-
     var userLatitude: String {
         return "\(locationManager.location?.coordinate.latitude ?? 0)"
 
@@ -101,13 +101,7 @@ struct locationInfoWidget: View {
     }
    var address_string: String = "No address"
     
-//    func address(){
-//        return CLGeocoder.init().reverseGeocodeLocation(locationManager.location!) { (place, error) in
-//            self.address_string = place?.first?.country
-//
-//        }
-//    }
-//
+
     let loc = locationManager.location
     
 
@@ -118,8 +112,8 @@ struct locationInfoWidget: View {
             HStack {
                 Text("location access: \(locationManager.accuracyAuthorization.rawValue)")
                 Spacer()
-                Text("VA: \((locationManager.location?.verticalAccuracy.description)!)")
-                Text("HA: \((locationManager.location?.horizontalAccuracy.description)! ?? "notfound")")
+                Text("VA: \(locationManager.location?.verticalAccuracy.description ?? "ERROR")")
+                Text("HA: \(locationManager.location?.horizontalAccuracy.description ?? "ERROR")")
             }
             HStack {
                 Text("latitude: \(userLatitude)")

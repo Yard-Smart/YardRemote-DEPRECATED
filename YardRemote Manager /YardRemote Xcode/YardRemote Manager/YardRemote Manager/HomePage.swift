@@ -15,10 +15,16 @@ import FirebaseFirestore
 var TopH:CGFloat = 80
 var TopW:CGFloat = UIScreen.main.bounds.width
 
+let calendar = NSCalendar.current
+let db = Firestore.firestore()
 
+var ScreenH:CGFloat = UIScreen.main.bounds.height
+var ScreenW:CGFloat = UIScreen.main.bounds.width
+var username: String = "Felg"
+var appname: String = "YardRemote Dev"
+let appID: String = UIDevice.current.identifierForVendor?.uuidString ?? "Failed to get UUID \(username) @ \(appname)"
 
-
-
+var testModeEnabled = true
 
 
 
@@ -74,50 +80,34 @@ struct LandingPageTop: View {
 }
 
 struct HomePage: View {
+    @ObservedObject public var employeesSO = EmployeeViewModel()
     var body: some View {
-        VStack {
-            Rectangle()
-            .frame(width: TopW, height: TopH-50).edgesIgnoringSafeArea(.all)
-            NavigationView {
-                List() {
-                    Section(header:
-                        HStack {
-                            Spacer()
-                            Text("Past Jobs")
-                                .font(.system(size: 26, weight: .black, design: .default))
-                    }) {
-                        PastJobsWidget()
+        NavigationView {
+            ScrollView{
+                VStack{
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 10, style: .circular)
+                            .fill(Color.gray)
+                        VStack{
+                            NavigationLink(destination: EmployeesList()){
+                                smallButton(text: "See Employees", color: Color.red)
+                            }
+                            NavigationLink(destination: LocationsList()){
+                                smallButton(text: "See Locations", color: Color.red)
+                            }
+                            NavigationLink(destination: PastJobsWidget()){
+                                smallButton(text: "See Jobs", color: Color.red)
+                            }
+                        }.padding(5)
                     }
                     
-                    Section(header:
-                        HStack {
-                            Spacer()
-                            Text("New Job")
-                                .font(.system(size: 26, weight: .black, design: .default))
-                    }) {
-                        NewJobWidget()
-                        
-                    }
+                    Text("New Job")
+                    NewJobWidget(employeesSO: employeesSO)
                     
-                    Section(header:
-                        HStack {
-                            Spacer()
-                            Text("Management")
-                                .font(.system(size: 26, weight: .black, design: .default))
-                    }) {
-                        managementWidget()
-                    }
-                    
+
                 }
-                .listStyle(GroupedListStyle())
-                .navigationBarHidden(true)
-            }.edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-            Spacer()
+            }
         }
-        .overlay(VStack {
-            LandingPageTop().edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-            Spacer()
-        })
     }
 }
 
